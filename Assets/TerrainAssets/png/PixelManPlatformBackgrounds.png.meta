@@ -44,12 +44,11 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -72,7 +71,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,7 +87,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -322,15 +320,16 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       PixelManPlatformBackgrounds_0: 6060611943934211680
+      PixelManPlatformBackgrounds_6: -5576124751304599444
       PixelManPlatformBackgrounds_1: 8656753489418687437
+      PixelManPlatformBackgrounds_7: 5796968477546649169
       PixelManPlatformBackgrounds_2: 1795130503372007062
-      PixelManPlatformBackgrounds_3: 4820011546823610968
       PixelManPlatformBackgrounds_4: 2771545185485178975
       PixelManPlatformBackgrounds_5: 4521903274082900630
-      PixelManPlatformBackgrounds_6: -5576124751304599444
-      PixelManPlatformBackgrounds_7: 5796968477546649169
-  mipmapLimitGroupName: 
+      PixelManPlatformBackgrounds_3: 4820011546823610968
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

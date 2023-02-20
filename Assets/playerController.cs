@@ -6,6 +6,7 @@ public class playerController : MonoBehaviour
 {
     public Rigidbody2D rb;
     public SpriteRenderer sr;
+    public Animator animator;
     public float moveSpeed = 5f;
     public float jumpForce= 30f;
     public bool grounded;
@@ -14,6 +15,7 @@ public class playerController : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,10 +32,19 @@ public class playerController : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
             sr.flipX = false;
+            animator.SetBool("isWalking", true);
+            animator.SetBool("isStanding", false);
         }
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
             sr.flipX = true;
+            animator.SetBool("isWalking", true);
+            animator.SetBool("isStanding", false);
+        }
+        if (Input.GetAxisRaw("Horizontal") == 0)
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isStanding", true);
         }
     }
 

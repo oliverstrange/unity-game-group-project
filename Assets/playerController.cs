@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerController : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public SpriteRenderer sr;
     public float moveSpeed = 5f;
     public float jumpForce= 30f;
     public bool grounded;
@@ -12,6 +13,7 @@ public class playerController : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -22,10 +24,17 @@ public class playerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        
-
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * moveSpeed;
+
+        if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            sr.flipX = false;
+        }
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            sr.flipX = true;
+        }
     }
 
     void jump()

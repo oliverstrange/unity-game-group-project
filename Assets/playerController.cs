@@ -52,7 +52,7 @@ public class playerController : MonoBehaviour
     {
         if ((grounded == true) && Input.GetKeyDown(KeyCode.UpArrow))
         {
-
+            animator.SetBool("isJumping", true);
 
             Vector2 jump = new Vector2(0, jumpForce);
 
@@ -68,7 +68,7 @@ public class playerController : MonoBehaviour
         if (collision.gameObject.tag == "Platform")
         {
             grounded = true;
-   
+            animator.SetBool("isJumping", false);
         }
     }
 

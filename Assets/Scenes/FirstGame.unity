@@ -1006,7 +1006,6 @@ GameObject:
   - component: {fileID: 1000515181}
   - component: {fileID: 1000515183}
   - component: {fileID: 1000515182}
-  - component: {fileID: 1000515184}
   m_Layer: 5
   m_Name: 'Pause corner '
   m_TagString: Untagged
@@ -1076,20 +1075,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000515180}
   m_CullTransparentMesh: 1
---- !u!114 &1000515184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000515180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b0db56676526444db72fb957cdc76ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseScreen: {fileID: 0}
-  pauseInst: {fileID: 1000515180}
 --- !u!1 &1021775600
 GameObject:
   m_ObjectHideFlags: 0

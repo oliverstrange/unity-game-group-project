@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Platform
+  - platform
+  - FetchMachine
+  - NewBall
+  - bone
+  - end
   layers:
   - Default
   - TransparentFX

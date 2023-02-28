@@ -20,7 +20,7 @@ public class playerController : MonoBehaviour
         jump();
     }
 
-    void FixedUpdate()
+    public void FixedUpdate()
     {
         
 

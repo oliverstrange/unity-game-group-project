@@ -9,6 +9,7 @@ TagManager:
   - FetchMachine
   - platform
   - Platform
+  - StartScreen
   layers:
   - Default
   - TransparentFX

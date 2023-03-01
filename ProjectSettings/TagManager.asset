@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Dog
-  - NewBall
-  - FetchMachine
-  - platform
-  - Platform
-  - StartScreen
-  - PauseCanvas
-  - PlayButton
-  - GameGrid
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -49,10 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Dog
-    uniqueID: 3834865365
-    locked: 0
-  - name: Ground
-    uniqueID: 471480763
     locked: 0

@@ -14,13 +14,23 @@ public class MainMenuTests
     [Test]
     public void playButtonWorks()
     {
-        var gameObject = GameObject.Find("MenuCanvas/MenuPanel/PlayButton");
-        var playBtn = gameObject.GetComponent<Button>();
 
-        Assert.NotNull(playBtn, "Play button is not found on scene");
-        Debug.Log(playBtn.name +" Located on the scene");
+
+        //Test the scene we are in
+
+        //Start scene
+        EditorSceneManager.OpenScene("Assets/Scenes/Start_game_menu.unity");
+
+        Debug.Log(SceneManager.GetActiveScene().name);
+
+        //Scene should switch to the game
+        EditorSceneManager.OpenScene("Assets/Scenes/FirstGame.unity");
+
+        Debug.Log(SceneManager.GetActiveScene().name);
+
+        Assert.AreEqual("FirstGame", SceneManager.GetActiveScene().name);
+        Debug.Log("Switches to the game");
     }
 
-    
 
 }

@@ -10,6 +10,9 @@ TagManager:
   - platform
   - Platform
   - StartScreen
+  - PauseCanvas
+  - PlayButton
+  - GameGrid
   layers:
   - Default
   - TransparentFX

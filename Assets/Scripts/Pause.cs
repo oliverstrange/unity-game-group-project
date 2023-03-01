@@ -2,10 +2,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class Pause : MonoBehaviour
 {
     [Header("Pause")]
-    [SerializeField] private GameObject pauseScreen;
+    [SerializeField] public GameObject pauseScreen;
 
     private void Awake()
     {

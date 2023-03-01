@@ -7,7 +7,6 @@ using UnityEngine.TestTools;
 public class AvatarMovement
 
 {
-    
     public float moveSpeed = 5f;
     public float jumpForce = 30f;
     public float replicatedTime = 1;

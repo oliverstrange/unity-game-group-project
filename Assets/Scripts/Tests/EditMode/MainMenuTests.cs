@@ -24,11 +24,11 @@ public class MainMenuTests
         Debug.Log(SceneManager.GetActiveScene().name);
 
         //Scene should switch to the game
-        EditorSceneManager.OpenScene("Assets/Scenes/FirstGame.unity");
+        EditorSceneManager.OpenScene("Assets/Scenes/Firstviablegame.unity");
 
         Debug.Log(SceneManager.GetActiveScene().name);
 
-        Assert.AreEqual("FirstGame", SceneManager.GetActiveScene().name);
+        Assert.AreEqual("Firstviablegame", SceneManager.GetActiveScene().name);
         Debug.Log("Switches to the game");
     }
 

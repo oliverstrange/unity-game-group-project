@@ -14,7 +14,7 @@ public class PauseMenuTests
     {
 
         // Get a reference to the "Start Menu" scene
-        Scene startMenuScene = SceneManager.GetSceneByName("FirstGame");
+        Scene startMenuScene = SceneManager.GetSceneByName("Firstviablegame");
 
         // Assert that the scene is valid
         Assert.IsTrue(startMenuScene.IsValid());

@@ -29,6 +29,7 @@ public class playerController : MonoBehaviour
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * moveSpeed;
 
+
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
             sr.flipX = false;
@@ -46,6 +47,7 @@ public class playerController : MonoBehaviour
             animator.SetBool("isWalking", false);
             animator.SetBool("isStanding", true);
         }
+
     }
 
     void jump()

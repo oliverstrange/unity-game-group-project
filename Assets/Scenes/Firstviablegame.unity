@@ -1404,7 +1404,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 471480763
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1, y: 1.5625, z: 0}
@@ -2536,7 +2536,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 471480763
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c56ec0d931d5e694f915eb0a7bec00e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2562,6 +2562,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1557351967}
+  sr: {fileID: 0}
+  animator: {fileID: 0}
   moveSpeed: 5
   jumpForce: 30
   grounded: 0
@@ -2828,7 +2830,7 @@ GameObject:
   - component: {fileID: 2051631257}
   m_Layer: 0
   m_Name: Grid
-  m_TagString: platform
+  m_TagString: GameGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

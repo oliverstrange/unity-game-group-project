@@ -12,6 +12,8 @@ TagManager:
   - NewBall
   - bone
   - end
+  - Dog
+  - PlayButton
   layers:
   - Default
   - TransparentFX
@@ -49,6 +51,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Foreground
+  - name: Sprites
     uniqueID: 293532645
     locked: 0

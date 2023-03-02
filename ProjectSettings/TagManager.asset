@@ -8,6 +8,10 @@ TagManager:
   - platform
   - Bounds
   - checkpoint
+  - FetchMachine
+  - NewBall
+  - bone
+  - end
   layers:
   - Default
   - TransparentFX
@@ -44,4 +48,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 293532645
     locked: 0

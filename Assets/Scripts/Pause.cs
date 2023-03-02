@@ -6,8 +6,8 @@ public class Pause : MonoBehaviour
 {
     [Header("Pause")]
     [SerializeField] public GameObject pauseScreen;
-    [Header("Pause 2")]
-    [SerializeField] public GameObject pauseInst;
+    /*[Header("Pause 2")]
+    [SerializeField] public GameObject pauseInst;*/
 
     private void Awake()
     {
@@ -21,20 +21,15 @@ public class Pause : MonoBehaviour
         if(pauseScreen.activeInHierarchy)
         {
             PauseGame(false);
-            PauseInst(true);
+           // PauseInst(true);
         }
         else
         {
             PauseGame(true);
-            PauseInst(false);
+            //PauseInst(false);
         }
     }
 }
-
-     public void PauseInst(bool status)
-    {
-        pauseInst.SetActive(status);
-    }
 
     public void PauseGame(bool status)
     {

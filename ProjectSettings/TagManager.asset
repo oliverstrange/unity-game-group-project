@@ -4,11 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Dog
-  - NewBall
-  - FetchMachine
-  - platform
   - Platform
+  - platform
+  - FetchMachine
+  - NewBall
+  - bone
+  - end
   layers:
   - Default
   - TransparentFX
@@ -46,9 +47,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Dog
-    uniqueID: 3834865365
-    locked: 0
-  - name: Ground
-    uniqueID: 471480763
+  - name: Foreground
+    uniqueID: 293532645
     locked: 0

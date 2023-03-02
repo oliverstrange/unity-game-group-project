@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     [Header("Pause")]
-    [SerializeField] private GameObject pauseScreen;
+    [SerializeField] public GameObject pauseScreen;
     [Header("Pause 2")]
-    [SerializeField] private GameObject pauseInst;
+    [SerializeField] public GameObject pauseInst;
 
     private void Awake()
     {

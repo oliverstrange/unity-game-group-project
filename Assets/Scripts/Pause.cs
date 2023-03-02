@@ -2,29 +2,39 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class Pause : MonoBehaviour
 {
     [Header("Pause")]
     [SerializeField] public GameObject pauseScreen;
+    [Header("Pause 2")]
+    [SerializeField] public GameObject pauseInst;
 
     private void Awake()
     {
         pauseScreen.SetActive(false);
     }
 
-      private void Update()
+   private void Update()
+{
+    if (Input.GetKeyDown(KeyCode.P))
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if(pauseScreen.activeInHierarchy)
         {
-            if(pauseScreen.activeInHierarchy)
-                 PauseGame(false);
-            else
-                PauseGame(true);
-                
+            PauseGame(false);
+            PauseInst(true);
+        }
+        else
+        {
+            PauseGame(true);
+            PauseInst(false);
         }
     }
+}
 
+     public void PauseInst(bool status)
+    {
+        pauseInst.SetActive(status);
+    }
 
     public void PauseGame(bool status)
     {

@@ -12,6 +12,7 @@ TagManager:
   - NewBall
   - bone
   - end
+  - GameGrid
   layers:
   - Default
   - TransparentFX

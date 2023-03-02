@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Platform
   - platform
+  - Bounds
+  - checkpoint
   - FetchMachine
   - NewBall
   - bone

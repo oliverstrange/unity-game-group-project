@@ -10,12 +10,21 @@ public class playerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce= 30f;
     public bool grounded;
+
+    // Code below is for fall detection 
+    public Vector3 respawnPoint;
+    public GameObject fallDetector;
+    public GameObject blackOut;
+    private float fadeTime = 0.45f; 
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        respawnPoint = transform.position;
+        blackOut.SetActive(false);
     }
 
     // Update is called once per frame
@@ -72,6 +81,29 @@ public class playerController : MonoBehaviour
             grounded = true;
             animator.SetBool("isJumping", false);
         }
+  
+        else if (collision.tag == "Bounds")
+        {
+            StartCoroutine(FadeOut());
+            transform.position = respawnPoint;
+
+        }
+              
+        else if (collision.tag == "checkpoint")
+        {
+            respawnPoint = transform.position;
+        }
+        
+    }
+
+    // Below is a blackout animation between falling and respawning
+
+      private IEnumerator FadeOut()
+    {
+        blackOut.SetActive(true);
+        yield return new WaitForSeconds(fadeTime);
+
+        blackOut.SetActive(false);
     }
 
     void OnTriggerExit2D(Collider2D collision)

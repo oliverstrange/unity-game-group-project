@@ -15,7 +15,7 @@ public class playerController : MonoBehaviour
     public Vector3 respawnPoint;
     public GameObject fallDetector;
     public GameObject blackOut;
-    private float fadeTime = 0.3f; 
+    private float fadeTime = 0.45f; 
     
     // Start is called before the first frame update
     void Start()

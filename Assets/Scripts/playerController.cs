@@ -82,9 +82,12 @@ public class playerController : MonoBehaviour
             animator.SetBool("isJumping", false);
         }
 
+        // added code for power up here to avoid repeating code 
         else if(collision.tag == "PowerUp")
         {
-            Debug.Log("Power Up");
+            Destroy(collision.gameObject);
+            moveSpeed = 15;
+            StartCoroutine(EndPower());
         }
   
         else if (collision.tag == "Bounds")
@@ -98,6 +101,13 @@ public class playerController : MonoBehaviour
         {
             respawnPoint = transform.position;
         }
+        
+    }
+
+    private IEnumerator EndPower()
+    {
+        yield return new WaitForSeconds(5);
+        moveSpeed = 2;
         
     }
 

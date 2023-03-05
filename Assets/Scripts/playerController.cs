@@ -81,6 +81,11 @@ public class playerController : MonoBehaviour
             grounded = true;
             animator.SetBool("isJumping", false);
         }
+
+        else if(collision.tag == "PowerUp")
+        {
+            Debug.Log("Power Up");
+        }
   
         else if (collision.tag == "Bounds")
         {

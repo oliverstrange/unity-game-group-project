@@ -13,6 +13,8 @@ TagManager:
   - bone
   - end
   - GameGrid
+  - Health
+  - DogFood
   layers:
   - Default
   - TransparentFX

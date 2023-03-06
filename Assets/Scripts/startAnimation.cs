@@ -64,10 +64,7 @@ public class startAnimation : MonoBehaviour
             camera_move_enabled = true;
             timer.SetActive(true);
             player.SetActive(true);
-            
-            
 
-          
         }
 
         if (camera_move_enabled)

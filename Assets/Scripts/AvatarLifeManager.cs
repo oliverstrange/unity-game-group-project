@@ -34,7 +34,7 @@ public class AvatarLifeManager : MonoBehaviour
 
     private void Update()
     {
-        currentHealthBar.fillAmount = currentHealth / 10;
+        currentHealthBar.fillAmount = currentHealth / 10 ;
     }
 
 
@@ -49,8 +49,8 @@ public class AvatarLifeManager : MonoBehaviour
     {
         currentHealth -- ;
         Debug.Log("Life has been lost, life totals is now " + currentHealth);
-        
 
+        Update();
 
         if (currentHealth == 0)
         {

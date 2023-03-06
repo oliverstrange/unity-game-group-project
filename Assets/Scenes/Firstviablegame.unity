@@ -235,7 +235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -294, y: 226.68677}
+  m_AnchoredPosition: {x: -222, y: 232.99677}
   m_SizeDelta: {x: 332.794, y: 34.3853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &267060445
@@ -433,7 +433,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375235210}
-  - component: {fileID: 375235211}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -463,21 +462,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &375235211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375235209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8858176a61a4444abafac5ad81bb92dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalHealthBar: {fileID: 515554573}
-  currentHealthBar: {fileID: 267060445}
-  startingHealth: 3
 --- !u!1 &400903506
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +650,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -374, y: 186}
+  m_AnchoredPosition: {x: -305, y: 188}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &445749366
@@ -889,7 +873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -294, y: 226.69}
+  m_AnchoredPosition: {x: -222, y: 233}
   m_SizeDelta: {x: 332.794, y: 34.3853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515554573
@@ -3202,7 +3186,7 @@ MonoBehaviour:
   respawnPoint: {x: 0, y: 0, z: 0}
   fallDetector: {fileID: 0}
   blackOut: {fileID: 2109535925}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 375235209}
 --- !u!61 &1557351971
 BoxCollider2D:
   m_ObjectHideFlags: 0

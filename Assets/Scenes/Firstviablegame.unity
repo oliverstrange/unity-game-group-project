@@ -3647,6 +3647,41 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1657239113 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95170962982753516, guid: a01b9805909e902439231051c9f9517b, type: 3}
+  m_PrefabInstance: {fileID: 1055269102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1657239115 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4668623107821448, guid: a01b9805909e902439231051c9f9517b, type: 3}
+  m_PrefabInstance: {fileID: 1055269102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1657239116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657239110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42af1f32d1d04e5daa23758d86510b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1657239113}
+  player: {fileID: 1557351965}
+  camera: {fileID: 519420028}
+  ball: {fileID: 445749366}
+  timer: {fileID: 1994030010}
+  timerText: {fileID: 432843166}
+  fetch: {fileID: 1657239115}
+  ballTransform: {fileID: 445749368}
+  playerTransform: {fileID: 1557351966}
+  ballCamera: 0
+  playerCamera: 0
+  offset: {x: 0, y: 0, z: -1}
+  speed: 2
 --- !u!1 &1881002435
 GameObject:
   m_ObjectHideFlags: 0

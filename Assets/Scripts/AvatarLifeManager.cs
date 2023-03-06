@@ -50,8 +50,6 @@ public class AvatarLifeManager : MonoBehaviour
         currentHealth -- ;
         Debug.Log("Life has been lost, life totals is now " + currentHealth);
 
-        Update();
-
         if (currentHealth == 0)
         {
             Die();
@@ -68,8 +66,11 @@ public class AvatarLifeManager : MonoBehaviour
             currentHealth++;
             Debug.Log("Life has been added, life totals is now " + currentHealth);
         }
-
-        Debug.Log("Life has not been added, life totals is at max ");
+        else
+        {
+            Debug.Log("Life has not been added, life totals is at max ");
+        }
+         
     }
 
     //Called when avatar has no remaining lives

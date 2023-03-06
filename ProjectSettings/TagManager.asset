@@ -14,6 +14,7 @@ TagManager:
   - end
   - Dog
   - PlayButton
+  - PowerUp
   layers:
   - Default
   - TransparentFX

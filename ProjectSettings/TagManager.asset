@@ -15,6 +15,7 @@ TagManager:
   - GameGrid
   - Health
   - DogFood
+  - Enemy
   layers:
   - Default
   - TransparentFX

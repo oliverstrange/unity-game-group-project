@@ -12,9 +12,10 @@ TagManager:
   - NewBall
   - bone
   - end
-  - Dog
-  - PlayButton
-  - PowerUp
+  - GameGrid
+  - Health
+  - DogFood
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
+  - 
   - 
   - 
   - 
@@ -49,12 +50,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 1011926803
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Sprites
+  - name: Foreground
     uniqueID: 293532645
     locked: 0

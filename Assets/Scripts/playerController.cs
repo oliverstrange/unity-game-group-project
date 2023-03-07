@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerController : MonoBehaviour
 {
@@ -15,7 +16,14 @@ public class playerController : MonoBehaviour
     public Vector3 respawnPoint;
     public GameObject fallDetector;
     public GameObject blackOut;
-    private float fadeTime = 0.45f; 
+    private float fadeTime = 0.45f;
+
+    //Life variables
+
+    public GameObject healthBar;
+    AvatarLifeManager dogLife;
+   
+
     
     // Start is called before the first frame update
     void Start()
@@ -25,12 +33,18 @@ public class playerController : MonoBehaviour
         animator = GetComponent<Animator>();
         respawnPoint = transform.position;
         blackOut.SetActive(false);
+
+        healthBar = GameObject.FindWithTag("Health");
+        dogLife = healthBar.GetComponent<AvatarLifeManager>();
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         jump();
+        
     }
 
     void FixedUpdate()
@@ -76,6 +90,7 @@ public class playerController : MonoBehaviour
 
    void OnTriggerEnter2D(Collider2D collision)
     {
+        //User is moving
         if (collision.gameObject.tag == "Platform")
         {
             grounded = true;
@@ -90,18 +105,30 @@ public class playerController : MonoBehaviour
             StartCoroutine(EndPower());
         }
   
+
+        //falls out of bounds
         else if (collision.tag == "Bounds")
         {
+
             StartCoroutine(FadeOut());
             transform.position = respawnPoint;
-
-        }
+            dogLife.TakeDamage();
               
+        }
+        //Reached a checkpoint      
         else if (collision.tag == "checkpoint")
         {
             respawnPoint = transform.position;
         }
-        
+
+        //Dog Food eaten
+        else if (collision.tag == "DogFood")
+        {
+            Destroy(collision.gameObject);
+            Debug.Log("Collided with the food");
+            dogLife.AddLife();
+        }
+
     }
 
     private IEnumerator EndPower()

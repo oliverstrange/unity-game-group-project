@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerController : MonoBehaviour
 {
@@ -11,18 +12,41 @@ public class playerController : MonoBehaviour
     public float jumpForce= 30f;
     public bool grounded;
     public AudioSource jumpSound;
+    public AudioSource eatSound;
+
+    // Code below is for fall detection 
+    public Vector3 respawnPoint;
+    public GameObject fallDetector;
+    public GameObject blackOut;
+    private float fadeTime = 0.45f;
+
+    //Life variables
+
+    public GameObject healthBar;
+    AvatarLifeManager dogLife;
+   
+
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        respawnPoint = transform.position;
+        blackOut.SetActive(false);
+
+        healthBar = GameObject.FindWithTag("Health");
+        dogLife = healthBar.GetComponent<AvatarLifeManager>();
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         jump();
+        
     }
 
     void FixedUpdate()
@@ -59,7 +83,7 @@ public class playerController : MonoBehaviour
 
             Vector2 jump = new Vector2(0, jumpForce);
 
-            if(jumpSound!=null)
+            if (jumpSound != null)
 
             {
                 jumpSound.Play();
@@ -74,11 +98,54 @@ public class playerController : MonoBehaviour
 
    void OnTriggerEnter2D(Collider2D collision)
     {
+        //User is moving
         if (collision.gameObject.tag == "Platform")
         {
             grounded = true;
             animator.SetBool("isJumping", false);
         }
+
+        //falls out of bounds
+        else if (collision.tag == "Bounds")
+        {
+
+            StartCoroutine(FadeOut());
+            transform.position = respawnPoint;
+            dogLife.TakeDamage();
+              
+        }
+        //Reached a checkpoint      
+        else if (collision.tag == "checkpoint")
+        {
+            respawnPoint = transform.position;
+        }
+
+        //Dog Food eaten
+        else if (collision.tag == "DogFood")
+        {
+            Destroy(collision.gameObject);
+
+            Debug.Log("Collided with the food");
+
+            if (eatSound != null)
+
+            {
+                eatSound.Play();
+            }
+
+            dogLife.AddLife();
+        }
+
+    }
+
+    // Below is a blackout animation between falling and respawning
+
+      private IEnumerator FadeOut()
+    {
+        blackOut.SetActive(true);
+        yield return new WaitForSeconds(fadeTime);
+
+        blackOut.SetActive(false);
     }
 
     void OnTriggerExit2D(Collider2D collision)

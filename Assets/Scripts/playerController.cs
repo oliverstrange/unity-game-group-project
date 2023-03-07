@@ -97,6 +97,15 @@ public class playerController : MonoBehaviour
             animator.SetBool("isJumping", false);
         }
 
+        // added code for power up here to avoid repeating code 
+        else if(collision.tag == "PowerUp")
+        {
+            Destroy(collision.gameObject);
+            moveSpeed = 15;
+            StartCoroutine(EndPower());
+        }
+  
+
         //falls out of bounds
         else if (collision.tag == "Bounds")
         {
@@ -120,6 +129,13 @@ public class playerController : MonoBehaviour
             dogLife.AddLife();
         }
 
+    }
+
+    private IEnumerator EndPower()
+    {
+        yield return new WaitForSeconds(5);
+        moveSpeed = 2;
+        
     }
 
     // Below is a blackout animation between falling and respawning

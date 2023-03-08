@@ -212,12 +212,11 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,7 +255,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -1667,70 +1665,71 @@ TextureImporter:
     nameFileIdTable:
       PixelManPlatforms_0: 7372711235586966674
       PixelManPlatforms_1: 7264296252454811243
-      PixelManPlatforms_10: -1729791566773763482
-      PixelManPlatforms_11: 3352053821999183461
-      PixelManPlatforms_12: -7955953273813793093
-      PixelManPlatforms_13: -61114772672904969
-      PixelManPlatforms_14: -4173252770906300181
-      PixelManPlatforms_15: 6949437389831835300
-      PixelManPlatforms_16: -6815769715910165888
-      PixelManPlatforms_17: 4664405400116557802
-      PixelManPlatforms_18: 2079621905716374983
-      PixelManPlatforms_19: -9093897911536956493
-      PixelManPlatforms_2: 3187807542198293859
-      PixelManPlatforms_20: -4332214324985642718
-      PixelManPlatforms_21: -7642744823935160931
-      PixelManPlatforms_22: 5782359260343815617
-      PixelManPlatforms_23: -7965425679484174473
-      PixelManPlatforms_24: -2833231049068120320
-      PixelManPlatforms_25: -4072610475184800243
-      PixelManPlatforms_26: 7005663423876728655
-      PixelManPlatforms_27: 4119246823557762112
-      PixelManPlatforms_28: 3146525181982317208
-      PixelManPlatforms_29: 5510334692855582220
-      PixelManPlatforms_3: 4976600904903370061
-      PixelManPlatforms_30: 6687899691473683840
-      PixelManPlatforms_31: 6349731250224198485
       PixelManPlatforms_32: -4522936564363880716
-      PixelManPlatforms_33: -7001159040486239486
       PixelManPlatforms_34: -8679201648467725981
-      PixelManPlatforms_35: -9221936948984771194
-      PixelManPlatforms_36: -620034386080387289
-      PixelManPlatforms_37: -5608710462190552408
-      PixelManPlatforms_38: 4707754288439905977
-      PixelManPlatforms_39: 606662666962695470
-      PixelManPlatforms_4: 1524159139280547041
-      PixelManPlatforms_40: -6093839842289017529
-      PixelManPlatforms_41: 1744238770190106179
-      PixelManPlatforms_42: -1623635275057111292
-      PixelManPlatforms_43: 3987631348063970703
-      PixelManPlatforms_44: 1030228610751970562
-      PixelManPlatforms_45: 548799355827228514
-      PixelManPlatforms_46: -2442039544532406783
-      PixelManPlatforms_47: 6207967870526964446
-      PixelManPlatforms_48: 8216468325662169945
-      PixelManPlatforms_49: 5940958269788653233
-      PixelManPlatforms_5: -345523109351949697
-      PixelManPlatforms_50: 8767613644220065263
-      PixelManPlatforms_51: -5727799331803682551
       PixelManPlatforms_52: -5297367377034354487
       PixelManPlatforms_53: -3634988662120565798
-      PixelManPlatforms_54: -5672786294034388157
-      PixelManPlatforms_55: -6202984136308333641
-      PixelManPlatforms_56: -8563626200896660311
-      PixelManPlatforms_57: -1544652847009594247
-      PixelManPlatforms_58: -7205792586455647577
-      PixelManPlatforms_59: -4474712023307704747
-      PixelManPlatforms_6: -629101026413512231
-      PixelManPlatforms_60: 7038809843600859439
-      PixelManPlatforms_61: -7527764029366457560
-      PixelManPlatforms_62: 4418190150289908198
+      PixelManPlatforms_28: 3146525181982317208
+      PixelManPlatforms_25: -4072610475184800243
+      PixelManPlatforms_18: 2079621905716374983
+      PixelManPlatforms_13: -61114772672904969
+      PixelManPlatforms_14: -4173252770906300181
+      PixelManPlatforms_47: 6207967870526964446
       PixelManPlatforms_63: -4890138577653592106
-      PixelManPlatforms_7: -1492560423464408041
-      PixelManPlatforms_8: -4536890951240861031
+      PixelManPlatforms_55: -6202984136308333641
+      PixelManPlatforms_41: 1744238770190106179
+      PixelManPlatforms_58: -7205792586455647577
+      PixelManPlatforms_5: -345523109351949697
+      PixelManPlatforms_56: -8563626200896660311
+      PixelManPlatforms_19: -9093897911536956493
+      PixelManPlatforms_46: -2442039544532406783
+      PixelManPlatforms_31: 6349731250224198485
+      PixelManPlatforms_39: 606662666962695470
+      PixelManPlatforms_43: 3987631348063970703
+      PixelManPlatforms_44: 1030228610751970562
+      PixelManPlatforms_60: 7038809843600859439
+      PixelManPlatforms_29: 5510334692855582220
+      PixelManPlatforms_12: -7955953273813793093
+      PixelManPlatforms_57: -1544652847009594247
+      PixelManPlatforms_23: -7965425679484174473
+      PixelManPlatforms_49: 5940958269788653233
+      PixelManPlatforms_51: -5727799331803682551
+      PixelManPlatforms_16: -6815769715910165888
+      PixelManPlatforms_6: -629101026413512231
+      PixelManPlatforms_15: 6949437389831835300
+      PixelManPlatforms_20: -4332214324985642718
+      PixelManPlatforms_42: -1623635275057111292
+      PixelManPlatforms_24: -2833231049068120320
+      PixelManPlatforms_40: -6093839842289017529
+      PixelManPlatforms_3: 4976600904903370061
+      PixelManPlatforms_2: 3187807542198293859
+      PixelManPlatforms_4: 1524159139280547041
+      PixelManPlatforms_11: 3352053821999183461
       PixelManPlatforms_9: 6214493143520610624
-  mipmapLimitGroupName: 
+      PixelManPlatforms_27: 4119246823557762112
+      PixelManPlatforms_59: -4474712023307704747
+      PixelManPlatforms_37: -5608710462190552408
+      PixelManPlatforms_30: 6687899691473683840
+      PixelManPlatforms_45: 548799355827228514
+      PixelManPlatforms_54: -5672786294034388157
+      PixelManPlatforms_10: -1729791566773763482
+      PixelManPlatforms_22: 5782359260343815617
+      PixelManPlatforms_50: 8767613644220065263
+      PixelManPlatforms_8: -4536890951240861031
+      PixelManPlatforms_35: -9221936948984771194
+      PixelManPlatforms_61: -7527764029366457560
+      PixelManPlatforms_48: 8216468325662169945
+      PixelManPlatforms_21: -7642744823935160931
+      PixelManPlatforms_36: -620034386080387289
+      PixelManPlatforms_26: 7005663423876728655
+      PixelManPlatforms_38: 4707754288439905977
+      PixelManPlatforms_7: -1492560423464408041
+      PixelManPlatforms_33: -7001159040486239486
+      PixelManPlatforms_17: 4664405400116557802
+      PixelManPlatforms_62: 4418190150289908198
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

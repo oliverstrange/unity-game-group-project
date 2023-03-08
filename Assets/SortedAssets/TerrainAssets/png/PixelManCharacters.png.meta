@@ -374,12 +374,11 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -418,7 +417,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -2961,126 +2959,127 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PixelManCharacters_0: 8973565675884788074
-      PixelManCharacters_1: 1159664264587729939
-      PixelManCharacters_10: -7504119249833184228
-      PixelManCharacters_100: 6653030657828042501
-      PixelManCharacters_101: 6996940454060932758
-      PixelManCharacters_102: -6582764015805588677
-      PixelManCharacters_103: -6989013211070372526
-      PixelManCharacters_104: -2229702870112434788
-      PixelManCharacters_105: 6609475604256810910
-      PixelManCharacters_106: 6650759994438694488
-      PixelManCharacters_107: -8439588252853965535
-      PixelManCharacters_108: -1690752831702280170
-      PixelManCharacters_109: 3203551478273841581
-      PixelManCharacters_11: -2668029259631798577
-      PixelManCharacters_110: -4966184074955109724
-      PixelManCharacters_111: -8554205207083321423
-      PixelManCharacters_112: 8529028474390709030
-      PixelManCharacters_113: -7717551282916274981
-      PixelManCharacters_114: 3286255309347438481
-      PixelManCharacters_115: 5814086127793006198
-      PixelManCharacters_116: -5251342649494132186
       PixelManCharacters_117: -1143215931186364677
-      PixelManCharacters_12: 6836754907640940905
-      PixelManCharacters_13: 8237013688575962575
-      PixelManCharacters_14: -7018530628102846279
-      PixelManCharacters_15: -6127529280051639934
-      PixelManCharacters_16: 6864975821768033547
-      PixelManCharacters_17: 2091393287402769433
-      PixelManCharacters_18: 2761351621082600349
-      PixelManCharacters_19: 935495096847880657
-      PixelManCharacters_2: -6356556892217102848
-      PixelManCharacters_20: 6202939372276818810
-      PixelManCharacters_21: -2471144891417189777
-      PixelManCharacters_22: 3265606002609114603
-      PixelManCharacters_23: 142232143889632420
-      PixelManCharacters_24: 4083703212564338749
-      PixelManCharacters_25: 7805959790893729985
-      PixelManCharacters_26: -1879293856532694163
-      PixelManCharacters_27: 6676153371638799310
-      PixelManCharacters_28: -7255768033090846071
-      PixelManCharacters_29: 4169777302359587886
-      PixelManCharacters_3: -275539783252764662
-      PixelManCharacters_30: -184768188005487463
-      PixelManCharacters_31: -2041491789287234416
-      PixelManCharacters_32: 5249837053805553071
-      PixelManCharacters_33: -7555131014827668837
-      PixelManCharacters_34: 2706815433194434137
-      PixelManCharacters_35: -4481175622201847889
-      PixelManCharacters_36: -3025664745731647969
-      PixelManCharacters_37: 6207428476628421689
-      PixelManCharacters_38: 7071756900309066534
-      PixelManCharacters_39: -6902075596491529366
-      PixelManCharacters_4: 1807925842974176799
-      PixelManCharacters_40: -3510840529077184777
-      PixelManCharacters_41: -9138809251600132210
-      PixelManCharacters_42: 31868157105690166
-      PixelManCharacters_43: 8462923242280152170
-      PixelManCharacters_44: -4961423176782025974
-      PixelManCharacters_45: 6567142473443764541
-      PixelManCharacters_46: 4675788744469187554
-      PixelManCharacters_47: -7974365391798625395
-      PixelManCharacters_48: 3326326768080446316
-      PixelManCharacters_49: -4134370107592592070
-      PixelManCharacters_5: 4548680372886728964
       PixelManCharacters_50: 8848418026526820564
-      PixelManCharacters_51: 6824758267595176351
-      PixelManCharacters_52: -4591607570455920484
-      PixelManCharacters_53: 1203910302458928397
-      PixelManCharacters_54: 8580456402551479775
+      PixelManCharacters_57: -6053376029339887563
+      PixelManCharacters_5: 4548680372886728964
+      PixelManCharacters_105: 6609475604256810910
+      PixelManCharacters_69: 7628542233501559596
+      PixelManCharacters_72: 1957462567642950596
+      PixelManCharacters_74: -6335814923123973127
+      PixelManCharacters_116: -5251342649494132186
+      PixelManCharacters_67: -930383836972825241
+      PixelManCharacters_79: -7373874963062931226
+      PixelManCharacters_106: 6650759994438694488
+      PixelManCharacters_42: 31868157105690166
+      PixelManCharacters_6: -860060174743831969
+      PixelManCharacters_48: 3326326768080446316
+      PixelManCharacters_19: 935495096847880657
+      PixelManCharacters_3: -275539783252764662
       PixelManCharacters_55: 4963633991243005357
       PixelManCharacters_56: -5561440391224938774
-      PixelManCharacters_57: -6053376029339887563
-      PixelManCharacters_58: 1662273765426776215
-      PixelManCharacters_59: -6462524975033291972
-      PixelManCharacters_6: -860060174743831969
-      PixelManCharacters_60: -6945407985309958292
-      PixelManCharacters_61: -8965373871335933226
-      PixelManCharacters_62: -3285842517394660817
-      PixelManCharacters_63: 9099301737414443367
-      PixelManCharacters_64: -7306553475999455475
-      PixelManCharacters_65: -5930074002387685534
-      PixelManCharacters_66: 18445860761408814
-      PixelManCharacters_67: -930383836972825241
-      PixelManCharacters_68: 5148298305289634336
-      PixelManCharacters_69: 7628542233501559596
-      PixelManCharacters_7: -1218655796296902292
-      PixelManCharacters_70: 2460070264623230659
-      PixelManCharacters_71: 4173793557158400120
-      PixelManCharacters_72: 1957462567642950596
-      PixelManCharacters_73: 4930059577704361082
-      PixelManCharacters_74: -6335814923123973127
-      PixelManCharacters_75: 6847009494617861964
-      PixelManCharacters_76: -8804779223759203129
-      PixelManCharacters_77: 2659465287851994971
-      PixelManCharacters_78: -1397602219727495680
-      PixelManCharacters_79: -7373874963062931226
-      PixelManCharacters_8: -5611858827566508524
-      PixelManCharacters_80: -4302275191407974604
+      PixelManCharacters_54: 8580456402551479775
+      PixelManCharacters_29: 4169777302359587886
       PixelManCharacters_81: 815836385469598281
-      PixelManCharacters_82: 3860923491631930184
+      PixelManCharacters_20: 6202939372276818810
+      PixelManCharacters_65: -5930074002387685534
+      PixelManCharacters_44: -4961423176782025974
+      PixelManCharacters_113: -7717551282916274981
+      PixelManCharacters_108: -1690752831702280170
+      PixelManCharacters_4: 1807925842974176799
+      PixelManCharacters_68: 5148298305289634336
       PixelManCharacters_83: 2110321991803075289
-      PixelManCharacters_84: -2201298195781027005
-      PixelManCharacters_85: 3089088909768500650
-      PixelManCharacters_86: -7064582783712746705
-      PixelManCharacters_87: 3821062289940303644
-      PixelManCharacters_88: -2933703859124430409
-      PixelManCharacters_89: 2965401997687425
-      PixelManCharacters_9: -5356068103788192638
-      PixelManCharacters_90: 5748926447139095074
       PixelManCharacters_91: -1338741598472686523
-      PixelManCharacters_92: 8990119446002594896
-      PixelManCharacters_93: -5425505570371220965
-      PixelManCharacters_94: -7044100709083202918
-      PixelManCharacters_95: 5506483399727697607
-      PixelManCharacters_96: 68574369628363398
+      PixelManCharacters_30: -184768188005487463
+      PixelManCharacters_17: 2091393287402769433
+      PixelManCharacters_90: 5748926447139095074
       PixelManCharacters_97: 3569642609655128292
-      PixelManCharacters_98: 4011461076899560382
+      PixelManCharacters_58: 1662273765426776215
+      PixelManCharacters_25: 7805959790893729985
+      PixelManCharacters_86: -7064582783712746705
+      PixelManCharacters_45: 6567142473443764541
+      PixelManCharacters_2: -6356556892217102848
+      PixelManCharacters_63: 9099301737414443367
+      PixelManCharacters_33: -7555131014827668837
+      PixelManCharacters_64: -7306553475999455475
+      PixelManCharacters_38: 7071756900309066534
+      PixelManCharacters_60: -6945407985309958292
+      PixelManCharacters_7: -1218655796296902292
+      PixelManCharacters_24: 4083703212564338749
+      PixelManCharacters_59: -6462524975033291972
+      PixelManCharacters_62: -3285842517394660817
+      PixelManCharacters_31: -2041491789287234416
+      PixelManCharacters_103: -6989013211070372526
+      PixelManCharacters_39: -6902075596491529366
+      PixelManCharacters_110: -4966184074955109724
+      PixelManCharacters_32: 5249837053805553071
+      PixelManCharacters_52: -4591607570455920484
+      PixelManCharacters_34: 2706815433194434137
+      PixelManCharacters_8: -5611858827566508524
+      PixelManCharacters_94: -7044100709083202918
+      PixelManCharacters_88: -2933703859124430409
+      PixelManCharacters_111: -8554205207083321423
+      PixelManCharacters_51: 6824758267595176351
+      PixelManCharacters_109: 3203551478273841581
+      PixelManCharacters_36: -3025664745731647969
+      PixelManCharacters_100: 6653030657828042501
+      PixelManCharacters_87: 3821062289940303644
+      PixelManCharacters_11: -2668029259631798577
       PixelManCharacters_99: -1758930894503378849
-  mipmapLimitGroupName: 
+      PixelManCharacters_101: 6996940454060932758
+      PixelManCharacters_43: 8462923242280152170
+      PixelManCharacters_47: -7974365391798625395
+      PixelManCharacters_9: -5356068103788192638
+      PixelManCharacters_107: -8439588252853965535
+      PixelManCharacters_10: -7504119249833184228
+      PixelManCharacters_27: 6676153371638799310
+      PixelManCharacters_82: 3860923491631930184
+      PixelManCharacters_75: 6847009494617861964
+      PixelManCharacters_98: 4011461076899560382
+      PixelManCharacters_114: 3286255309347438481
+      PixelManCharacters_41: -9138809251600132210
+      PixelManCharacters_26: -1879293856532694163
+      PixelManCharacters_23: 142232143889632420
+      PixelManCharacters_96: 68574369628363398
+      PixelManCharacters_78: -1397602219727495680
+      PixelManCharacters_84: -2201298195781027005
+      PixelManCharacters_53: 1203910302458928397
+      PixelManCharacters_15: -6127529280051639934
+      PixelManCharacters_0: 8973565675884788074
+      PixelManCharacters_14: -7018530628102846279
+      PixelManCharacters_21: -2471144891417189777
+      PixelManCharacters_80: -4302275191407974604
+      PixelManCharacters_85: 3089088909768500650
+      PixelManCharacters_112: 8529028474390709030
+      PixelManCharacters_28: -7255768033090846071
+      PixelManCharacters_92: 8990119446002594896
+      PixelManCharacters_76: -8804779223759203129
+      PixelManCharacters_16: 6864975821768033547
+      PixelManCharacters_71: 4173793557158400120
+      PixelManCharacters_37: 6207428476628421689
+      PixelManCharacters_35: -4481175622201847889
+      PixelManCharacters_73: 4930059577704361082
+      PixelManCharacters_12: 6836754907640940905
+      PixelManCharacters_1: 1159664264587729939
+      PixelManCharacters_102: -6582764015805588677
+      PixelManCharacters_89: 2965401997687425
+      PixelManCharacters_77: 2659465287851994971
+      PixelManCharacters_104: -2229702870112434788
+      PixelManCharacters_70: 2460070264623230659
+      PixelManCharacters_93: -5425505570371220965
+      PixelManCharacters_46: 4675788744469187554
+      PixelManCharacters_66: 18445860761408814
+      PixelManCharacters_95: 5506483399727697607
+      PixelManCharacters_13: 8237013688575962575
+      PixelManCharacters_18: 2761351621082600349
+      PixelManCharacters_49: -4134370107592592070
+      PixelManCharacters_61: -8965373871335933226
+      PixelManCharacters_115: 5814086127793006198
+      PixelManCharacters_40: -3510840529077184777
+      PixelManCharacters_22: 3265606002609114603
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

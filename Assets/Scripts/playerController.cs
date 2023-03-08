@@ -97,6 +97,13 @@ public class playerController : MonoBehaviour
             animator.SetBool("isJumping", false);
         }
 
+        // Need to add animation/change colour and hit for health
+        if (collison.gameObject.CompareTag("Trap"))
+        {
+            GetComponent < SpriteRenderer>().color = color.red
+
+        }
+
         // added code for power up here to avoid repeating code 
         else if(collision.tag == "PowerUp")
         {
@@ -133,8 +140,9 @@ public class playerController : MonoBehaviour
 
     private IEnumerator EndPower()
     {
-        yield return new WaitForSeconds(5);
-        moveSpeed = 2;
+        yield return new WaitForSeconds(2);
+        moveSpeed = 5;
+
         
     }
 

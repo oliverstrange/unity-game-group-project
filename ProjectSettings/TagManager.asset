@@ -16,6 +16,8 @@ TagManager:
   - Health
   - DogFood
   - Enemy
+  - PowerUp
+  - Trap
   layers:
   - Default
   - TransparentFX

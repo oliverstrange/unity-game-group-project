@@ -96,16 +96,16 @@ public class playerController : MonoBehaviour
             animator.SetBool("isJumping", false);
         }
 
-        // Need to add animation/change colour and hit for health
+        //Trap effect
         if (collision.gameObject.tag == "Trap")
         {
             GetComponent < SpriteRenderer>().color = Color.red; 
-            moveSpeed = 3;
+            moveSpeed = 1;
             StartCoroutine(EndPower());
 
         }
 
-        // added code for power up here to avoid repeating code 
+        //Power up 
         else if(collision.tag == "PowerUp")
         {
             Destroy(collision.gameObject);

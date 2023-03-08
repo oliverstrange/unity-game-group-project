@@ -20,11 +20,10 @@ public class playerController : MonoBehaviour
 
     //Life variables
 
-    public GameObject healthBar;
-    AvatarLifeManager dogLife;
-   
+    Health playerHealth;
+    private bool hasTakenDamage = false;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +33,7 @@ public class playerController : MonoBehaviour
         respawnPoint = transform.position;
         blackOut.SetActive(false);
 
-        healthBar = GameObject.FindWithTag("Health");
-        dogLife = healthBar.GetComponent<AvatarLifeManager>();
+       
 
         
     }
@@ -44,7 +42,7 @@ public class playerController : MonoBehaviour
     void Update()
     {
         jump();
-        
+        playerHealth = GetComponentInParent<Health>();
     }
 
     void FixedUpdate()
@@ -91,10 +89,11 @@ public class playerController : MonoBehaviour
    void OnTriggerEnter2D(Collider2D collision)
     {
         //User is moving
-        if (collision.gameObject.tag == "Platform")
+        if (collision.tag == "Platform")
         {
             grounded = true;
             animator.SetBool("isJumping", false);
+            hasTakenDamage = false;
         }
 
         // added code for power up here to avoid repeating code 
@@ -109,24 +108,31 @@ public class playerController : MonoBehaviour
         //falls out of bounds
         else if (collision.tag == "Bounds")
         {
+            if (!hasTakenDamage)
+            {
+                hasTakenDamage = true;
+                Debug.Log("Dog fell off platform");
+                StartCoroutine(FadeOut());
+                transform.position = respawnPoint;
+                playerHealth.TakeDamage(1);
+            }
 
-            StartCoroutine(FadeOut());
-            transform.position = respawnPoint;
-            dogLife.TakeDamage();
-              
         }
         //Reached a checkpoint      
         else if (collision.tag == "checkpoint")
         {
             respawnPoint = transform.position;
+            Debug.Log("Checkpoint reached");
         }
 
         //Dog Food eaten
         else if (collision.tag == "DogFood")
         {
+            playerHealth.AddHealth(1);
+ 
             Destroy(collision.gameObject);
             Debug.Log("Collided with the food");
-            dogLife.AddLife();
+            
         }
 
     }

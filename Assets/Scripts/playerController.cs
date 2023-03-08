@@ -36,7 +36,6 @@ public class playerController : MonoBehaviour
 
         healthBar = GameObject.FindWithTag("Health");
         dogLife = healthBar.GetComponent<AvatarLifeManager>();
-
         
     }
 
@@ -98,9 +97,11 @@ public class playerController : MonoBehaviour
         }
 
         // Need to add animation/change colour and hit for health
-        if (collison.gameObject.CompareTag("Trap"))
+        if (collision.gameObject.tag == "Trap")
         {
-            GetComponent < SpriteRenderer>().color = color.red
+            GetComponent < SpriteRenderer>().color = Color.red; 
+            moveSpeed = 3;
+            StartCoroutine(EndPower());
 
         }
 
@@ -142,7 +143,7 @@ public class playerController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         moveSpeed = 5;
-
+        GetComponent<SpriteRenderer>().color = Color.white;
         
     }
 

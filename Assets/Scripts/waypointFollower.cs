@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class waypointFollower : MonoBehaviour
 {
+    //allows parameters to be changed in Unity. This allows adding multiple waypoints.
     [SerializeField] private GameObject[] waypoints;
-    // checking which we are moving towards
+    // checking which waypoint we are moving towards
     private int currentPointInd = 0;
 
     //speed movement
@@ -14,7 +15,7 @@ public class waypointFollower : MonoBehaviour
     private void Update()
     {
         //set position of platform so can move towards other one. This returns boolean
-        if (Vector2.Distance(waypoints[currentPointInd].transform.position, transform.position) < .1f);
+        if (Vector2.Distance(waypoints[currentPointInd].transform.position, transform.position) < .1f)
         {
             currentPointInd++;
             if (currentPointInd >= waypoints.Length)

@@ -14,6 +14,7 @@ public class AvatarLifeManager : MonoBehaviour
     [SerializeField] private Image totalHealthBar;
     [SerializeField] private Image currentHealthBar;
     [SerializeField] private float startingHealth;
+    [SerializeField] public GameObject die;
 
    
 
@@ -23,6 +24,7 @@ public class AvatarLifeManager : MonoBehaviour
 
         currentHealth = startingHealth;
         totalHealthBar.fillAmount = currentHealth / 10;
+        die.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -52,7 +54,7 @@ public class AvatarLifeManager : MonoBehaviour
 
         if (currentHealth == 0)
         {
-            Die();
+            Die(true);
         }
         
     }
@@ -74,9 +76,12 @@ public class AvatarLifeManager : MonoBehaviour
     }
 
     //Called when avatar has no remaining lives
-    public void Die()
+    public void Die(bool status)
     {
-        //Call the gameover screen
+   
+        die.SetActive(status);
+
+        
     }
 
 

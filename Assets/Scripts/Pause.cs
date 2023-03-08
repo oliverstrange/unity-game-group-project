@@ -6,8 +6,8 @@ public class Pause : MonoBehaviour
 {
     [Header("Pause")]
     [SerializeField] public GameObject pauseScreen;
-    /*[Header("Pause 2")]
-    [SerializeField] public GameObject pauseInst;*/
+    [Header("Pause 2")]
+    [SerializeField] public GameObject pauseInst;
 
     private void Awake()
     {
@@ -21,15 +21,27 @@ public class Pause : MonoBehaviour
         if(pauseScreen.activeInHierarchy)
         {
             PauseGame(false);
-           // PauseInst(true);
+            PauseInst(true);
         }
         else
         {
             PauseGame(true);
-            //PauseInst(false);
+            PauseInst(false);
         }
     }
+    if (Input.GetKeyDown(KeyCode.Q) & pauseScreen.activeInHierarchy)
+    {
+        Quit();
+    }
+
+
 }
+
+   public void PauseInst(bool status)
+    {
+        pauseInst.SetActive(status);
+
+    }
 
     public void PauseGame(bool status)
     {
@@ -40,6 +52,14 @@ public class Pause : MonoBehaviour
         else
             Time.timeScale = 1;
     }
+
+    public void Quit()
+        {
+            Application.Quit();
+            UnityEditor.EditorApplication.isPlaying = false;
+
+        }
+    
 
     
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4010764242544123751}
   - component: {fileID: 4010764242544123753}
   - component: {fileID: 4010764242544123754}
+  - component: {fileID: 2621280150406835777}
   m_Layer: 0
   m_Name: Moving platform
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1513379313
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -3932816638193255715, guid: e242b62e7e6caee439fa1d024a8fa5bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -96,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 4010764242544123750}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 20e8bc7a1deac824e88456039b53dbd9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 33150f995f5bc204f8028623c323d10a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -123,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.2857144, y: 0.5714286}
+    oldSize: {x: 2, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -132,3 +133,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2857144, y: 0.36898565}
   m_EdgeRadius: 0
+--- !u!114 &2621280150406835777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010764242544123750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30a616e233267b4e8f1947d2971c3aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  speed: 2

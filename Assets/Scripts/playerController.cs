@@ -36,7 +36,6 @@ public class playerController : MonoBehaviour
 
         healthBar = GameObject.FindWithTag("Health");
         dogLife = healthBar.GetComponent<AvatarLifeManager>();
-
         
     }
 
@@ -97,7 +96,16 @@ public class playerController : MonoBehaviour
             animator.SetBool("isJumping", false);
         }
 
-        // added code for power up here to avoid repeating code 
+        //Trap effect
+        if (collision.gameObject.tag == "Trap")
+        {
+            GetComponent < SpriteRenderer>().color = Color.red; 
+            moveSpeed = 1;
+            StartCoroutine(EndPower());
+
+        }
+
+        //Power up 
         else if(collision.tag == "PowerUp")
         {
             Destroy(collision.gameObject);
@@ -133,8 +141,9 @@ public class playerController : MonoBehaviour
 
     private IEnumerator EndPower()
     {
-        yield return new WaitForSeconds(5);
-        moveSpeed = 2;
+        yield return new WaitForSeconds(2);
+        moveSpeed = 5;
+        GetComponent<SpriteRenderer>().color = Color.white;
         
     }
 

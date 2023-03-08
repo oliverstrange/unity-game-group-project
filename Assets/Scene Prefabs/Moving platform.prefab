@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4010764242544123751}
   - component: {fileID: 4010764242544123753}
   - component: {fileID: 4010764242544123754}
+  - component: {fileID: 2621280150406835777}
   m_Layer: 0
   m_Name: Moving platform
   m_TagString: Untagged
@@ -123,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 0.8}
+    oldSize: {x: 2, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -132,3 +133,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2857144, y: 0.36898565}
   m_EdgeRadius: 0
+--- !u!114 &2621280150406835777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010764242544123750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30a616e233267b4e8f1947d2971c3aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  speed: 2

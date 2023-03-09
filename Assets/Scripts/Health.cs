@@ -16,11 +16,16 @@ public class Health : MonoBehaviour
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
 
+    // Code for Game over screen
+    [Header("Gameover")]
+    [SerializeField] public GameObject gameOverScreen;
+
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        gameOverScreen.SetActive(false);
     }
 
     public void TakeDamage(float _damage)
@@ -39,6 +44,9 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("Die");
                 Debug.Log("Dog has no lives (dead)");
+                
+                GameOver(true);
+
 
                 if (GetComponentInParent<playerController>() != null)
                 {
@@ -88,5 +96,17 @@ public class Health : MonoBehaviour
             TakeDamage(1);
         }
         
+    }
+
+// Code below is for the death screen and a 2 second delay.
+    public void GameOver(bool status)
+    {   
+        StartCoroutine(GameOverWithDelay(status, 2f));
+    }
+
+    private IEnumerator GameOverWithDelay(bool status, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        gameOverScreen.SetActive(status);
     }
 }

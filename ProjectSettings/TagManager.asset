@@ -13,9 +13,12 @@ TagManager:
   - bone
   - end
   - GameGrid
-  - Health
   - DogFood
   - Enemy
+  - Dog
+  - Wall
+  - DogDatabase
+  - HealthBar
   - PowerUp
   - Trap
   layers:

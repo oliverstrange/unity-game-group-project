@@ -24,6 +24,7 @@ public class playerController : MonoBehaviour
 
     Health playerHealth;
     private bool hasTakenDamage = false;
+    private bool hasAteFood = false;
 
 
     // Start is called before the first frame update
@@ -143,15 +144,21 @@ public class playerController : MonoBehaviour
         //Dog Food eaten
         else if (collision.tag == "DogFood")
         {
-            playerHealth.AddHealth(1);
- 
-            Destroy(collision.gameObject);
-            Debug.Log("Collided with the food");
-
-            if (eatSound != null)
+            if (!hasAteFood)
             {
-                eatSound.Play();
+                hasAteFood = true;
+                playerHealth.AddHealth(1);
+
+                Destroy(collision.gameObject);
+                Debug.Log("Collided with the food");
+
+                if (eatSound != null)
+                {
+                    eatSound.Play();
+                }
+                hasAteFood = false;
             }
+            
         
             
         }

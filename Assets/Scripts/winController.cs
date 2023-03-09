@@ -7,15 +7,26 @@ public class winController : MonoBehaviour
 
     public bool reachEnd;
     public AudioSource winSound;
+    public GameObject player;
+    public Canvas winScreen;
+
+
+    void Start()
+    {
+        winScreen.gameObject.SetActive(false);
+    }
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "end")
         {
             reachEnd = true;
-            print("win");
+            Time.timeScale = 0;
             winSound.Play();
-
+            player.SetActive(false);
+            winScreen.gameObject.SetActive(true);
+            print("win");
 
         }
         else

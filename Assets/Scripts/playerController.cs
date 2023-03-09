@@ -35,9 +35,6 @@ public class playerController : MonoBehaviour
         respawnPoint = transform.position;
         blackOut.SetActive(false);
 
-        healthBar = GameObject.FindWithTag("Health");
-        dogLife = healthBar.GetComponent<AvatarLifeManager>();
-        
     }
 
     // Update is called once per frame
@@ -155,7 +152,7 @@ public class playerController : MonoBehaviour
             {
                 eatSound.Play();
             }
-            dogLife.AddLife();
+        
             
         }
 

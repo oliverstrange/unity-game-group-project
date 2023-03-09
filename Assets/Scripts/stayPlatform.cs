@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class stayPlatform : MonoBehaviour
 {
-    //recognise trigger of outer box collider
+    //recognise collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Dog")

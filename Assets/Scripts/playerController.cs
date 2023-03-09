@@ -11,6 +11,8 @@ public class playerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce= 30f;
     public bool grounded;
+    public AudioSource jumpSound;
+    public AudioSource eatSound;
 
     // Code below is for fall detection 
     public Vector3 respawnPoint;
@@ -33,8 +35,8 @@ public class playerController : MonoBehaviour
         respawnPoint = transform.position;
         blackOut.SetActive(false);
 
-       
-
+        healthBar = GameObject.FindWithTag("Health");
+        dogLife = healthBar.GetComponent<AvatarLifeManager>();
         
     }
 
@@ -79,6 +81,12 @@ public class playerController : MonoBehaviour
 
             Vector2 jump = new Vector2(0, jumpForce);
 
+            if (jumpSound != null)
+
+            {
+                jumpSound.Play();
+            }
+
             rb.AddForce(jump, ForceMode2D.Impulse);
         }
 
@@ -96,7 +104,17 @@ public class playerController : MonoBehaviour
             hasTakenDamage = false;
         }
 
-        // added code for power up here to avoid repeating code 
+      
+        //Trap effect
+        if (collision.gameObject.tag == "Trap")
+        {
+            GetComponent < SpriteRenderer>().color = Color.red; 
+            moveSpeed = 1;
+            StartCoroutine(EndPower());
+
+        }
+
+        //Power up
         else if(collision.tag == "PowerUp")
         {
             Destroy(collision.gameObject);
@@ -132,18 +150,25 @@ public class playerController : MonoBehaviour
  
             Destroy(collision.gameObject);
             Debug.Log("Collided with the food");
+
+            if (eatSound != null)
+            {
+                eatSound.Play();
+            }
+            dogLife.AddLife();
             
         }
 
     }
 
-    private IEnumerator EndPower()
-    {
-        yield return new WaitForSeconds(5);
-        moveSpeed = 2;
+   private IEnumerator EndPower()
+   {
+       yield return new WaitForSeconds(2);
+       moveSpeed = 2;
+       GetComponent<SpriteRenderer>().color = Color.white;
         
-    }
-
+   }
+   
     // Below is a blackout animation between falling and respawning
 
       private IEnumerator FadeOut()

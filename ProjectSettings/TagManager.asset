@@ -19,6 +19,8 @@ TagManager:
   - Wall
   - DogDatabase
   - HealthBar
+  - PowerUp
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -26,7 +28,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

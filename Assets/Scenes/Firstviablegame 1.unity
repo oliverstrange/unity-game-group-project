@@ -1626,7 +1626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachEnd: 0
-  winSound: {fileID: 0}
+  winSound: {fileID: 445749374}
 --- !u!114 &445749373
 MonoBehaviour:
   m_ObjectHideFlags: 0

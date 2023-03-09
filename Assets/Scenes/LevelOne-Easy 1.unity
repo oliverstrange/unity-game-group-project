@@ -16255,16 +16255,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -11, y: 2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 5
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 0, y: 2, z: 0}
     second:
       serializedVersion: 2
@@ -19339,7 +19329,7 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b71cfb76b54c440409864361ed2aad27, type: 2}
-  - m_RefCount: 529
+  - m_RefCount: 528
     m_Data: {fileID: 11400000, guid: 31aa313230be0664eb973e3d619190fa, type: 2}
   - m_RefCount: 1090
     m_Data: {fileID: 11400000, guid: 41740d878b8fa254d9b6c4f9642171c9, type: 2}
@@ -19386,7 +19376,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 2056776818, guid: 413986c4a668c374d8de72a47621b531, type: 3}
-  - m_RefCount: 1619
+  - m_RefCount: 1618
     m_Data: {fileID: -1259931593, guid: 413986c4a668c374d8de72a47621b531, type: 3}
   - m_RefCount: 143
     m_Data: {fileID: 336057350, guid: 413986c4a668c374d8de72a47621b531, type: 3}
@@ -19503,7 +19493,7 @@ Tilemap:
       e31: 7.34684e-40
       e32: 2.7e-44
       e33: 1
-  - m_RefCount: 1803
+  - m_RefCount: 1802
     m_Data:
       e00: 1
       e01: 0
@@ -19576,7 +19566,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1815
+  - m_RefCount: 1814
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -19742,7 +19732,7 @@ CompositeCollider2D:
         Y: 50000000
       - X: 410000000
         Y: 50000000
-    - - X: -100000000
+    - - X: -110000000
         Y: 30000000
       - X: -60000000
         Y: 30000000
@@ -19788,7 +19778,7 @@ CompositeCollider2D:
         Y: 30000000
       - X: -120000000
         Y: 20000000
-      - X: -100000000
+      - X: -110000000
         Y: 20000000
     - - X: 288348160
         Y: 49911156
@@ -19896,8 +19886,8 @@ CompositeCollider2D:
       - {x: 40.999973, y: 6}
       - {x: 38, y: 5.999971}
       - {x: 38.00003, y: 5}
-    - - {x: -10.00003, y: 2}
-      - {x: -9.99997, y: 3}
+    - - {x: -11.00003, y: 2}
+      - {x: -10.99997, y: 3}
       - {x: -6, y: 3.0000293}
       - {x: -5.9999704, y: 4}
       - {x: -2, y: 3.9999704}
@@ -19952,7 +19942,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920993502}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -19962,8 +19952,8 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!19719996 &920993508
 TilemapCollider2D:

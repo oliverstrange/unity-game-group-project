@@ -10,6 +10,6 @@ public class timer : MonoBehaviour
     void Update()
     {
         timeUsed += Time.deltaTime;
-        timerText.text = "Time Used: " + Mathf.Round(timeUsed).ToString();
+        timerText.text = "Time Taken: " + Mathf.Round(timeUsed).ToString();
     }
 }

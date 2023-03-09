@@ -38,7 +38,6 @@ public class playerController : MonoBehaviour
 
         healthBar = GameObject.FindWithTag("Health");
         dogLife = healthBar.GetComponent<AvatarLifeManager>();
-
         
     }
 
@@ -105,6 +104,25 @@ public class playerController : MonoBehaviour
             animator.SetBool("isJumping", false);
         }
 
+
+        //Trap effect
+        if (collision.gameObject.tag == "Trap")
+        {
+            GetComponent < SpriteRenderer>().color = Color.red; 
+            moveSpeed = 1;
+            StartCoroutine(EndPower());
+
+        }
+
+        //Power up 
+        else if(collision.tag == "PowerUp")
+        {
+            Destroy(collision.gameObject);
+            moveSpeed = 15;
+            StartCoroutine(EndPower());
+        }
+  
+
         //falls out of bounds
         else if (collision.tag == "Bounds")
         {
@@ -124,20 +142,24 @@ public class playerController : MonoBehaviour
         else if (collision.tag == "DogFood")
         {
             Destroy(collision.gameObject);
-
             Debug.Log("Collided with the food");
 
             if (eatSound != null)
-
             {
                 eatSound.Play();
             }
-
             dogLife.AddLife();
         }
-
     }
 
+   private IEnumerator EndPower()
+   {
+       yield return new WaitForSeconds(2);
+       moveSpeed = 5;
+       GetComponent<SpriteRenderer>().color = Color.white;
+        
+   }
+   
     // Below is a blackout animation between falling and respawning
 
       private IEnumerator FadeOut()

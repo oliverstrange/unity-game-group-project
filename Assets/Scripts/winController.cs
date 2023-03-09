@@ -6,6 +6,7 @@ public class winController : MonoBehaviour
 {
 
     public bool reachEnd;
+    public AudioSource winSound;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,6 +14,8 @@ public class winController : MonoBehaviour
         {
             reachEnd = true;
             print("win");
+            winSound.Play();
+
 
         }
         else

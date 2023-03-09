@@ -11,6 +11,8 @@ public class playerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce= 30f;
     public bool grounded;
+    public AudioSource jumpSound;
+    public AudioSource eatSound;
 
     // Code below is for fall detection 
     public Vector3 respawnPoint;
@@ -80,6 +82,12 @@ public class playerController : MonoBehaviour
 
             Vector2 jump = new Vector2(0, jumpForce);
 
+            if (jumpSound != null)
+
+            {
+                jumpSound.Play();
+            }
+
             rb.AddForce(jump, ForceMode2D.Impulse);
         }
 
@@ -95,6 +103,7 @@ public class playerController : MonoBehaviour
             grounded = true;
             animator.SetBool("isJumping", false);
         }
+
 
         //Trap effect
         if (collision.gameObject.tag == "Trap")
@@ -134,19 +143,23 @@ public class playerController : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Debug.Log("Collided with the food");
+
+            if (eatSound != null)
+            {
+                eatSound.Play();
+            }
             dogLife.AddLife();
         }
-
     }
 
-    private IEnumerator EndPower()
-    {
-        yield return new WaitForSeconds(2);
-        moveSpeed = 5;
-        GetComponent<SpriteRenderer>().color = Color.white;
+   private IEnumerator EndPower()
+   {
+       yield return new WaitForSeconds(2);
+       moveSpeed = 5;
+       GetComponent<SpriteRenderer>().color = Color.white;
         
-    }
-
+   }
+   
     // Below is a blackout animation between falling and respawning
 
       private IEnumerator FadeOut()

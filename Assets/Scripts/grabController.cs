@@ -7,6 +7,7 @@ public class grabController : MonoBehaviour
     public Transform grabDetect;
     public Transform boxHolder;
     public float rayDist;
+    public AudioSource ballPickup;
    
     // Update is called once per frame
     void Update()
@@ -21,7 +22,8 @@ public class grabController : MonoBehaviour
                 grabCheck.collider.gameObject.GetComponent<Renderer>().enabled = false;
                 grabCheck.collider.gameObject.transform.position = boxHolder.position;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-
+                ballPickup.Play();
+    
                 GetComponent<Animator>().SetLayerWeight(1, 1f);
                 GetComponent<Animator>().SetLayerWeight(0, 0f);
 

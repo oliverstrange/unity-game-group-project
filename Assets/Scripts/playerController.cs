@@ -73,7 +73,7 @@ public class playerController : MonoBehaviour
 
     void jump()
     {
-        if ((grounded == true) && Input.GetKeyDown(KeyCode.UpArrow))
+        if ((grounded == true) && Input.GetKeyDown(KeyCode.UpArrow) && (Time.timeScale != 0))
         {
             animator.SetBool("isJumping", true);
 

@@ -7,18 +7,23 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private AudioClip gameOverSound;
 
+
     public void Restart()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(2);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+        Time.timeScale = 1;
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 }

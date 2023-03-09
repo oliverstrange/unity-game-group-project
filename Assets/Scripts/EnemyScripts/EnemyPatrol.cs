@@ -28,24 +28,30 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnDisable()
     {
-        anim.SetBool("Moving", false);
+        if (enemy)
+        {
+            anim.SetBool("Moving", false);
+        }
     }
 
     private void Update()
     {
-        if(movingLeft)
+        if (enemy)
         {
-            if (enemy.position.x >= leftEdge.position.x)
-                MoveInDirection(-1);
+            if (movingLeft)
+            {
+                if (enemy.position.x >= leftEdge.position.x)
+                    MoveInDirection(-1);
+                else
+                    DirectionChange();
+            }
             else
-                DirectionChange();
-        }
-        else
-        {
-            if (enemy.position.x <= rightEdge.position.x)
-                MoveInDirection(1);
-            else
-                DirectionChange();
+            {
+                if (enemy.position.x <= rightEdge.position.x)
+                    MoveInDirection(1);
+                else
+                    DirectionChange();
+            }
         }
     }
 

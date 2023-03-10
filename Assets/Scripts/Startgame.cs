@@ -8,7 +8,7 @@ public class Startgame : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("FirstGame");
+        SceneManager.LoadScene("TutorialLevel");
 
 
     }

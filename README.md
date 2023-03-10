@@ -1,8 +1,6 @@
-# comp4024
+# Fetch
 
 ![](TitleScreenImage.png)
-
-# Fetch
 
 An playful 2D platformer made using Unity game engine and written using C#.
 
@@ -10,16 +8,16 @@ In this game, your main goal is to retreive the ball, at the other end of the ma
 
 ## Team members
 
-This game was made by 'Group B' for our software engineering management module at the University of Nottingham. 
+This game was made by 'Group B' for our 'Software Engineering Management' module (comp4024) at the University of Nottingham. 
 
 The team consisted of six members:
 
-Oliver Strange
-Conrad (Pak Mok)
-Ibrahim Atomanson
-Rebecca Wallis Downham
-Ragnar (Feiyang Chai)
-Gabriel Cowan
+- Oliver Strange
+- Conrad (Pak Mok)
+- Ibrahim Atomanson
+- Rebecca Wallis Downham
+- Ragnar (Feiyang Chai)
+- Gabriel Cowan
 
 ## Unity engine
 
@@ -72,3 +70,4 @@ We would like to thank the following sites for the use of thier cool assets.
 - https://assetstore.unity.com/packages/2d/environments/pixelart-platformer-gameassets-227969
 - https://benvictus.itch.io/pixel-dogs
 - https://elthen.itch.io/2d-pixel-art-cat-sprites
+- https://pixabay.com/sound-effects/

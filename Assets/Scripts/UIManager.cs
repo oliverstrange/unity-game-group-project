@@ -26,4 +26,15 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
     }
+
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(1); 
+    }
+
+     public void Quit()
+    {
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 }

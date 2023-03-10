@@ -11,7 +11,7 @@ public class winController : MonoBehaviour
     public Canvas winScreen;
 
 
-    void Start()
+    void Awake()
     {
         winScreen.gameObject.SetActive(false);
     }

@@ -1,2 +1,74 @@
 # comp4024
-Group B's game
+
+![](TitleScreenImage.png)
+
+# Fetch
+
+An playful 2D platformer made using Unity game engine and written using C#.
+
+In this game, your main goal is to retreive the ball, at the other end of the map and bring it back to your fetch robot, as quickly as possible. You do all this will exploring fun maps, avoiding deathly traps and defeating dangerous enemies.
+
+## Team members
+
+This game was made by 'Group B' for our software engineering management module at the University of Nottingham. 
+
+The team consisted of six members:
+
+Oliver Strange
+Conrad (Pak Mok)
+Ibrahim Atomanson
+Rebecca Wallis Downham
+Ragnar (Feiyang Chai)
+Gabriel Cowan
+
+## Unity engine
+
+This game was developed using version 2021.3.18f1 of the Unity editor.
+
+## Running the game
+
+**Note:** This game requires Unity Hub
+
+### Installing
+
+- To install the Unity Hub on Windows or macOS, visit [Download Unity](https://unity3d.com/get-unity/download).
+- To install the Unity Hub on Linux visit [Download Unity for Linux](https://forum.unity.com/threads/unity-hub-v2-0-0-release.677485/?_ga=2.62773420.187063667.1583686914-1236938044.1553758856).
+
+```bash
+# Clone the repo
+git clone https://github.com/oliverstrange/comp4024.git
+```
+
+## Running the project
+
+If you have downloaded whole project, to open it, you need to add it to your Unity Hub.
+To do so, you just need to open Unity Hub, then click the white `ADD` button in upper right corner. Then in the dialog window, you need to go to the location, where you have downloaded the project, select it and click `ok` in the bottom right corner of dialog window. Then find the project on the projects list in Unit Hub, and double click the projects name (*for each project there is information about unity version which were used by making this project*). 
+
+## Game controls
+
+Use the `left arrow` key and `right arrow` key to move the dog around the map and the `up arrow` key to jump. 
+Use the `P` key to pause the game at anytime.
+
+## Features:
+
+- [x] Multiple maps
+- [x] Animation using prefabs (Main character run, jump, die, etc.)
+- [x] Basic 2D physics (Gravity, velocity, collision detection, etc.)
+- [x] Checkpoints 
+- [x] Enimies
+- [x] Start, Pause and Game Over screens
+- [x] Game mechanics / rules (points, lives, etc.)
+- [x] Audio (Music, sound effects, etc.)
+- [x] Pick ups (Speed boost, extra health, etc.) 
+- [x] Tests
+
+
+## Credits / Thanks:
+
+We would like to thank the following sites for the use of thier cool assets.
+- https://henrysoftware.itch.io/pixel-food
+- https://edermunizz.itch.io/free-pixel-art-hill
+- https://screamingbrainstudios.itch.io/seamless-space-backgrounds
+- https://assetstore.unity.com/packages/2d/environments/pixelart-platformer-gameassets-227969
+- https://benvictus.itch.io/pixel-dogs
+- https://elthen.itch.io/2d-pixel-art-cat-sprites

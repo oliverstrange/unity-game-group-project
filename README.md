@@ -55,7 +55,7 @@ Use the `P` key to pause the game at anytime.
 - [x] Checkpoints 
 - [x] Enimies
 - [x] Start, Pause and Game Over screens
-- [x] Game mechanics / rules (points, lives, etc.)
+- [x] Game mechanics / rules (Points, lives, etc.)
 - [x] Audio (Music, sound effects, etc.)
 - [x] Pick ups (Speed boost, extra health, etc.) 
 - [x] Tests

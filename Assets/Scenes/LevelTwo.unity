@@ -7083,6 +7083,24 @@ CompositeCollider2D:
         Y: 0
       - X: 450000000
         Y: 0
+    - - X: -80000000
+        Y: 16250000
+      - X: -80000000
+        Y: 15625000
+      - X: -60625000
+        Y: 15625000
+      - X: -60000000
+        Y: 16250000
+      - X: -60000000
+        Y: 20000000
+      - X: -90000000
+        Y: 20000000
+      - X: -90000000
+        Y: 16250000
+      - X: -89375000
+        Y: 15625000
+      - X: -80625000
+        Y: 15625000
     - - X: 162187088
         Y: -10000000
       - X: 170000000
@@ -7111,24 +7129,6 @@ CompositeCollider2D:
         Y: -10316281
       - X: 162187088
         Y: -10316281
-    - - X: -80000000
-        Y: 16250000
-      - X: -80000000
-        Y: 15625000
-      - X: -60625000
-        Y: 15625000
-      - X: -60000000
-        Y: 16250000
-      - X: -60000000
-        Y: 20000000
-      - X: -90000000
-        Y: 20000000
-      - X: -90000000
-        Y: 16250000
-      - X: -89375000
-        Y: 15625000
-      - X: -80625000
-        Y: 15625000
     - - X: 380000000
         Y: 10000000
       - X: 350000000
@@ -7225,14 +7225,6 @@ CompositeCollider2D:
         Y: -100000000
       - X: 300000000
         Y: -100000000
-    - - X: 250000000
-        Y: -70000000
-      - X: 220000000
-        Y: -70000000
-      - X: 220000000
-        Y: -80000000
-      - X: 250000000
-        Y: -80000000
     - - X: 200000000
         Y: -70000000
       - X: 110000000
@@ -7240,6 +7232,14 @@ CompositeCollider2D:
       - X: 110000000
         Y: -80000000
       - X: 200000000
+        Y: -80000000
+    - - X: 250000000
+        Y: -70000000
+      - X: 220000000
+        Y: -70000000
+      - X: 220000000
+        Y: -80000000
+      - X: 250000000
         Y: -80000000
   m_CompositePaths:
     m_Paths:
@@ -7293,14 +7293,6 @@ CompositeCollider2D:
       - {x: 25.930227, y: 12.806974}
       - {x: 20.930256, y: 12.806945}
       - {x: 20.930285, y: 11.806974}
-    - - {x: 16.21868, y: 8.868372}
-      - {x: 16.218739, y: 8.9}
-      - {x: 21, y: 8.900029}
-      - {x: 20.999971, y: 9.9}
-      - {x: 15, y: 9.89997}
-      - {x: 15.000029, y: 8.9}
-      - {x: 15.218709, y: 8.89997}
-      - {x: 15.218738, y: 8.868372}
     - - {x: 32.218678, y: 7.868372}
       - {x: 32.218735, y: 7.9}
       - {x: 33, y: 7.9000297}
@@ -7317,6 +7309,14 @@ CompositeCollider2D:
       - {x: 28.000029, y: 7.9}
       - {x: 28.218708, y: 7.8999705}
       - {x: 28.218737, y: 7.868372}
+    - - {x: 16.21868, y: 8.868372}
+      - {x: 16.218739, y: 8.9}
+      - {x: 21, y: 8.900029}
+      - {x: 20.999971, y: 9.9}
+      - {x: 15, y: 9.89997}
+      - {x: 15.000029, y: 8.9}
+      - {x: 15.218709, y: 8.89997}
+      - {x: 15.218738, y: 8.868372}
     - - {x: 42.999973, y: 7.9}
       - {x: 42.999973, y: 8.9}
       - {x: 36, y: 8.89997}
@@ -9046,6 +9046,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 472685418137065792}
     m_Modifications:
+    - target: {fileID: 4996572851853249067, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
+      propertyPath: options.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996572851853249067, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
+      propertyPath: options.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4996572853304140033, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -10399,22 +10407,6 @@ MonoBehaviour:
   boxHolder: {fileID: 2724697118375447261}
   rayDist: 0.2
   ballPickup: {fileID: 2724697117297376091}
---- !u!114 &2724697117297376090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2724697117297376097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c239e5376aa7d4dbc3fcfbd7efcd21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 3
-  iFramesDuration: 0
-  numberOfFlashes: 0
-  gameOverScreen: {fileID: 2724697118291239870}
 --- !u!82 &2724697117297376091
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10654,10 +10646,10 @@ GameObject:
   - component: {fileID: 2724697117297376095}
   - component: {fileID: 2724697117297376088}
   - component: {fileID: 2724697117297376089}
-  - component: {fileID: 2724697117297376090}
   - component: {fileID: 2724697117297376085}
   - component: {fileID: 2724697117297376084}
   - component: {fileID: 2724697117297376091}
+  - component: {fileID: 2724697117297376100}
   m_Layer: 5
   m_Name: Dog
   m_TagString: Player
@@ -10704,6 +10696,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2724697117297376100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2724697117297376097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c239e5376aa7d4dbc3fcfbd7efcd21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  gameOverScreen: {fileID: 2724697118234602870}
 --- !u!114 &2724697117404162604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12157,7 +12165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0002593994}
+  m_AnchoredPosition: {x: 0, y: 0.00024414062}
   m_SizeDelta: {x: 0, y: 0.00045776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2724697118244603834
@@ -13010,7 +13018,24 @@ RectTransform:
   m_AnchoredPosition: {x: 400, y: -217.5}
   m_SizeDelta: {x: 800, y: 435}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2724697118441998565
+--- !u!1 &2724697118441998571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2724697118441998564}
+  - component: {fileID: 2724697118441998572}
+  m_Layer: 5
+  m_Name: HealthBar
+  m_TagString: HealthBar
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2724697118441998572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13026,23 +13051,6 @@ MonoBehaviour:
   currentHealthBar: {fileID: 2724697119040783077}
   startingHealth: 3
   dogLife: {fileID: 0}
---- !u!1 &2724697118441998571
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2724697118441998564}
-  - component: {fileID: 2724697118441998565}
-  m_Layer: 5
-  m_Name: HealthBar
-  m_TagString: HealthBar
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &2724697118494321860
 MonoBehaviour:
   m_ObjectHideFlags: 0

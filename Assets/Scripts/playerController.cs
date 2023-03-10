@@ -168,7 +168,7 @@ public class playerController : MonoBehaviour
    private IEnumerator EndPower()
    {
        yield return new WaitForSeconds(2);
-       moveSpeed = 2;
+       moveSpeed = 5;
        GetComponent<SpriteRenderer>().color = Color.white;
         
    }

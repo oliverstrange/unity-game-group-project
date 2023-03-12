@@ -25,7 +25,7 @@ public class HealthBarUi : MonoBehaviour
     {
 
         obj = GameObject.FindWithTag("Player");
-        //dogLife = obj.GetComponent<Health>();
+        dogLife = obj.GetComponent<Health>();
 
         totalHealthBar.fillAmount = dogLife.currentHealth / 10;
      

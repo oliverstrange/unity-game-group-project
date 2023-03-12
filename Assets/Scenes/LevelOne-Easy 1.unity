@@ -20408,6 +20408,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -199.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2724697118800564590, guid: 186a6c4f2b852f34e8d9bc3c8fdaa1c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00024414062
+      objectReference: {fileID: 0}
     - target: {fileID: 2724697118841016605, guid: 186a6c4f2b852f34e8d9bc3c8fdaa1c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -276.491
@@ -20436,6 +20440,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -197.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2724697119007978748, guid: 186a6c4f2b852f34e8d9bc3c8fdaa1c4, type: 3}
+      propertyPath: dogLife
+      value: 
+      objectReference: {fileID: 1228850390}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 186a6c4f2b852f34e8d9bc3c8fdaa1c4, type: 3}
 --- !u!114 &1228850389 stripped
@@ -20447,6 +20455,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1228850390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2724697117872244547, guid: 186a6c4f2b852f34e8d9bc3c8fdaa1c4, type: 3}
+  m_PrefabInstance: {fileID: 1228850388}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c239e5376aa7d4dbc3fcfbd7efcd21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1352448751 stripped

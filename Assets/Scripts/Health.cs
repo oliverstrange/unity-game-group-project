@@ -91,10 +91,6 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TakeDamage(1);
-        }
         
     }
 
@@ -102,11 +98,13 @@ public class Health : MonoBehaviour
     public void GameOver(bool status)
     {   
         StartCoroutine(GameOverWithDelay(status, 2f));
+        Debug.Log("2 second delay");
     }
 
     private IEnumerator GameOverWithDelay(bool status, float delay)
     {
         yield return new WaitForSeconds(delay);
         gameOverScreen.SetActive(status);
+        Debug.Log("Death screen called");
     }
 }

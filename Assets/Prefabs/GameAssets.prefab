@@ -129,7 +129,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2724697117004694251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f7a953cf94a14011ae8281a0a822096, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a1465c315a2fe6428a3f2b5a64d4bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   options:
@@ -372,8 +372,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2724697117331488577}
-        m_TargetAssemblyTypeName: UIfunctions, Assembly-CSharp
+      - m_Target: {fileID: 8325014084830420478}
+        m_TargetAssemblyTypeName: UIManager, NewAssembly
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -611,7 +611,6 @@ GameObject:
   - component: {fileID: 2724697117331488583}
   - component: {fileID: 2724697117331488580}
   - component: {fileID: 2724697117331488581}
-  - component: {fileID: 2724697117331488577}
   - component: {fileID: 2724697117331488576}
   m_Layer: 5
   m_Name: UIScreens
@@ -704,18 +703,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2724697117331488577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2724697117331488634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ad86bc9fe9f4e428262480de6891ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2724697117331488576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2235,8 +2222,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2724697117331488577}
-        m_TargetAssemblyTypeName: UIfunctions, Assembly-CSharp
+      - m_Target: {fileID: 8325014084830420478}
+        m_TargetAssemblyTypeName: UIManager, NewAssembly
         m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
@@ -2968,6 +2955,7 @@ GameObject:
   - component: {fileID: 2724697118857207712}
   - component: {fileID: 2724697118857207713}
   - component: {fileID: 2724697118857207718}
+  - component: {fileID: 8325014084830420478}
   m_Layer: 5
   m_Name: Game Over Screen
   m_TagString: Untagged
@@ -3059,6 +3047,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8325014084830420478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2724697118857207719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13cc349f75175c459d1ec5c03acf8fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverSound: {fileID: 0}
 --- !u!1 &2724697118862319867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,8 +3489,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2724697117331488577}
-        m_TargetAssemblyTypeName: UIfunctions, Assembly-CSharp
+      - m_Target: {fileID: 8325014084830420478}
+        m_TargetAssemblyTypeName: UIManager, NewAssembly
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:

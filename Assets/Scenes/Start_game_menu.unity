@@ -807,7 +807,6 @@ MonoBehaviour:
   options:
   - {fileID: 2061119265}
   - {fileID: 1262133333}
-  - {fileID: 0}
 --- !u!114 &1232192443
 MonoBehaviour:
   m_ObjectHideFlags: 0

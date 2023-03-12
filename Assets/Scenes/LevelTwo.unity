@@ -6992,6 +6992,7 @@ CompositeCollider2D:
         Y: 80000000
       - X: 430000000
         Y: 80000000
+<<<<<<< HEAD
     - - X: 130000000
         Y: 80000000
       - X: 90000000
@@ -7001,6 +7002,17 @@ CompositeCollider2D:
       - X: 130000000
         Y: 70000000
     - - X: 70000000
+=======
+    - - X: 162187088
+        Y: -316281
+      - X: 120000000
+        Y: -316281
+      - X: 120000000
+        Y: 0
+      - X: 70000000
+        Y: 0
+      - X: 70000000
+>>>>>>> main
         Y: 80000000
       - X: 20000000
         Y: 80000000
@@ -7009,9 +7021,27 @@ CompositeCollider2D:
       - X: 60000000
         Y: 70000000
       - X: 60000000
+<<<<<<< HEAD
         Y: 50000000
       - X: 70000000
         Y: 50000000
+=======
+        Y: -10000000
+      - X: 72187080
+        Y: -10000000
+      - X: 72187080
+        Y: -10316281
+      - X: 162187088
+        Y: -10316281
+    - - X: 130000000
+        Y: 80000000
+      - X: 90000000
+        Y: 80000000
+      - X: 90000000
+        Y: 70000000
+      - X: 130000000
+        Y: 70000000
+>>>>>>> main
     - - X: -80930256
         Y: 70232832
       - X: -170930256
@@ -7238,6 +7268,17 @@ CompositeCollider2D:
         Y: -80000000
       - X: 200000000
         Y: -80000000
+<<<<<<< HEAD
+=======
+    - - X: 200000000
+        Y: -70000000
+      - X: 160000000
+        Y: -70000000
+      - X: 160000000
+        Y: -80000000
+      - X: 200000000
+        Y: -80000000
+>>>>>>> main
     - - X: 250000000
         Y: -70000000
       - X: 220000000
@@ -7330,12 +7371,26 @@ CompositeCollider2D:
       - {x: 12.99997, y: 7.9}
       - {x: 9, y: 7.8999705}
       - {x: 9.00003, y: 6.9}
+<<<<<<< HEAD
     - - {x: 6.9999704, y: 4.9}
+=======
+    - - {x: 16.21868, y: -1.1316282}
+      - {x: 16.21868, y: -0.1316281}
+      - {x: 12, y: -0.13159871}
+      - {x: 11.99997, y: -0.1}
+      - {x: 7, y: -0.0999706}
+>>>>>>> main
       - {x: 6.9999704, y: 7.9}
       - {x: 2, y: 7.8999705}
       - {x: 2.0000293, y: 6.9}
       - {x: 6, y: 6.8999705}
+<<<<<<< HEAD
       - {x: 6.000029, y: 4.9}
+=======
+      - {x: 6.000029, y: -1.1}
+      - {x: 7.218708, y: -1.1000295}
+      - {x: 7.2187376, y: -1.1316282}
+>>>>>>> main
     - - {x: -8.093056, y: 5.9232836}
       - {x: -8.093056, y: 6.9232836}
       - {x: -17.093025, y: 6.923254}
@@ -7451,6 +7506,13 @@ CompositeCollider2D:
       - {x: 22.000029, y: -8.1}
     - - {x: 19.999971, y: -8.1}
       - {x: 19.999971, y: -7.1}
+<<<<<<< HEAD
+=======
+      - {x: 16, y: -7.1000295}
+      - {x: 16.000029, y: -8.1}
+    - - {x: 13.999971, y: -8.1}
+      - {x: 13.999971, y: -7.1}
+>>>>>>> main
       - {x: 11, y: -7.1000295}
       - {x: 11.00003, y: -8.1}
   m_VertexDistance: 0.0005
@@ -9056,6 +9118,7 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4996572851853249067, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
+<<<<<<< HEAD
       propertyPath: options.Array.data[0]
       value: 
       objectReference: {fileID: 1892969601}
@@ -9063,6 +9126,11 @@ PrefabInstance:
       propertyPath: options.Array.data[1]
       value: 
       objectReference: {fileID: 124123686}
+=======
+      propertyPath: options.Array.data[1]
+      value: 
+      objectReference: {fileID: 1818396146}
+>>>>>>> main
     - target: {fileID: 4996572853304140033, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9153,6 +9221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
+--- !u!224 &1818396146 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4996572851692187472, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
+  m_PrefabInstance: {fileID: 1818396145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1860903668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10957,7 +11030,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2724697117512482546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f7a953cf94a14011ae8281a0a822096, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a1465c315a2fe6428a3f2b5a64d4bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   options:
@@ -11063,8 +11136,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2724697117839246168}
-        m_TargetAssemblyTypeName: UIfunctions, Assembly-CSharp
+      - m_Target: {fileID: 2724697117839246180}
+        m_TargetAssemblyTypeName: UIManager, NewAssembly
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -11396,18 +11469,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &2724697117839246168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2724697117839246179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ad86bc9fe9f4e428262480de6891ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2724697117839246169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11518,8 +11579,8 @@ GameObject:
   - component: {fileID: 2724697117839246174}
   - component: {fileID: 2724697117839246173}
   - component: {fileID: 2724697117839246172}
-  - component: {fileID: 2724697117839246168}
   - component: {fileID: 2724697117839246169}
+  - component: {fileID: 2724697117839246180}
   m_Layer: 5
   m_Name: UIScreens
   m_TagString: Untagged
@@ -11527,6 +11588,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2724697117839246180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2724697117839246179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13cc349f75175c459d1ec5c03acf8fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverSound: {fileID: 0}
 --- !u!4 &2724697117913572536
 Transform:
   m_ObjectHideFlags: 0
@@ -11656,8 +11730,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2724697117839246168}
-        m_TargetAssemblyTypeName: UIfunctions, Assembly-CSharp
+      - m_Target: {fileID: 2724697117839246180}
+        m_TargetAssemblyTypeName: UIManager, NewAssembly
         m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
@@ -12708,8 +12782,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2724697117839246168}
-        m_TargetAssemblyTypeName: UIfunctions, Assembly-CSharp
+      - m_Target: {fileID: 2724697117839246180}
+        m_TargetAssemblyTypeName: UIManager, NewAssembly
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
@@ -13064,7 +13138,28 @@ MonoBehaviour:
   totalHealthBar: {fileID: 2724697117194389337}
   currentHealthBar: {fileID: 2724697119040783077}
   startingHealth: 3
+<<<<<<< HEAD
   dogLife: {fileID: 2724697117297376100}
+=======
+  dogLife: {fileID: 2724697117297376090}
+--- !u!1 &2724697118441998571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2724697118441998564}
+  - component: {fileID: 2724697118441998565}
+  m_Layer: 5
+  m_Name: HealthBar
+  m_TagString: HealthBar
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+>>>>>>> main
 --- !u!114 &2724697118494321860
 MonoBehaviour:
   m_ObjectHideFlags: 0

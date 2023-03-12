@@ -89,11 +89,14 @@ public class Health : MonoBehaviour
     }
 
 
+<<<<<<< HEAD
     private void Update()
     {
         
     }
 
+=======
+>>>>>>> main
 // Code below is for the death screen and a 2 second delay.
     public void GameOver(bool status)
     {   

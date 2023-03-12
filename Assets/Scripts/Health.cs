@@ -89,25 +89,15 @@ public class Health : MonoBehaviour
     }
 
 
-<<<<<<< HEAD
-    private void Update()
-    {
-        
-    }
-
-=======
->>>>>>> main
 // Code below is for the death screen and a 2 second delay.
     public void GameOver(bool status)
     {   
         StartCoroutine(GameOverWithDelay(status, 2f));
-        Debug.Log("2 second delay");
     }
 
     private IEnumerator GameOverWithDelay(bool status, float delay)
     {
         yield return new WaitForSeconds(delay);
         gameOverScreen.SetActive(status);
-        Debug.Log("Death screen called");
     }
 }

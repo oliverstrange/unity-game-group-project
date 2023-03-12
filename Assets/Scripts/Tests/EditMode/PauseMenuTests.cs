@@ -15,32 +15,11 @@ public class PauseMenuTests
 
         // Get a reference to the "Start Menu" scene
         Scene gameScene = SceneManager.GetSceneByName("Firstviablegame");
-        Debug.Log(SceneManager.GetActiveScene().name +"hi");
+        Debug.Log(SceneManager.GetActiveScene().name );
 
-        // Assert that the scene is valid
-        //Assert.IsTrue(gameScene.IsValid());
-
-        //Test the scene we are in
-        //SceneManager.SetActiveScene(gameScene); 
-
-        //Debug.Log(SceneManager.GetActiveScene().name);
-
-
-        //Scene act = SceneManager.GetActiveScene();
-
-        // Get a reference to the game object
-        //GameObject gridObj = GameObject.FindWithTag("GameGrid");
-
-        // Get a reference to the script component attached to the game object
-        //Pause myScript = gridObj.GetComponent<Pause>();
-
-        //myScript.PauseGame(true);
-
-        //Assert.IsTrue(myScript.pauseScreen.activeSelf);
+       
         Debug.Log("Screen is paused");
 
-        //myScript.PauseGame(false);
-        //Assert.IsFalse(myScript.pauseScreen.activeSelf);
         Debug.Log("Screen is unPaused");
 
     }

@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &124123686 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4996572851692187472, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
+  m_PrefabInstance: {fileID: 1818396145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &129701543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8949260057550509385, guid: 128ab253f4f2ead459c562d6a9c35730, type: 3}
@@ -9048,12 +9053,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4996572851853249067, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
       propertyPath: options.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4996572851853249067, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
+      propertyPath: options.Array.data[0]
+      value: 
+      objectReference: {fileID: 1892969601}
     - target: {fileID: 4996572851853249067, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
       propertyPath: options.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 124123686}
     - target: {fileID: 4996572853304140033, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9201,6 +9210,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9c771f013b6cd147b4032822e3ef3bf, type: 3}
+--- !u!224 &1892969601 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4996572851210249994, guid: 13f1d9b383cf344bf86d66b98bb46a3b, type: 3}
+  m_PrefabInstance: {fileID: 1818396145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1913387775
 GameObject:
   m_ObjectHideFlags: 0
@@ -10645,11 +10659,11 @@ GameObject:
   - component: {fileID: 2724697117297376094}
   - component: {fileID: 2724697117297376095}
   - component: {fileID: 2724697117297376088}
+  - component: {fileID: 2724697117297376100}
   - component: {fileID: 2724697117297376089}
   - component: {fileID: 2724697117297376085}
   - component: {fileID: 2724697117297376084}
   - component: {fileID: 2724697117297376091}
-  - component: {fileID: 2724697117297376100}
   m_Layer: 5
   m_Name: Dog
   m_TagString: Player
@@ -13050,7 +13064,7 @@ MonoBehaviour:
   totalHealthBar: {fileID: 2724697117194389337}
   currentHealthBar: {fileID: 2724697119040783077}
   startingHealth: 3
-  dogLife: {fileID: 0}
+  dogLife: {fileID: 2724697117297376100}
 --- !u!114 &2724697118494321860
 MonoBehaviour:
   m_ObjectHideFlags: 0

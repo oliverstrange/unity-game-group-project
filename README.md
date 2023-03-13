@@ -1,6 +1,6 @@
 # Fetch
 
-![](TitleScreenImage.png)
+![](GameImage.png)
 
 An playful 2D platformer made using Unity game engine and written using C#.
 

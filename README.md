@@ -42,6 +42,7 @@ git clone https://github.com/oliverstrange/comp4024.git
 If you have downloaded whole project, to open it, you need to add it to your Unity Hub.
 To do so, you just need to open Unity Hub, then click the white `ADD` button in upper right corner. Then in the dialog window, you need to go to the location, where you have downloaded the project, select it and click `ok` in the bottom right corner of dialog window. Then find the project on the projects list in Unit Hub, and double click the projects name (*for each project there is information about unity version which were used by making this project*). 
 
+
 ## Game scenes
 
 - Start_Game_Menu
@@ -50,6 +51,12 @@ To do so, you just need to open Unity Hub, then click the white `ADD` button in 
 - Level_Two
 - Win_Screen_One
 - Win_Screen_Two
+
+## Building the game
+
+The game is all ready to be built with the scenes in the correct order. However, you will need to elete or comment out " UnityEditor.EditorApplication.isPlaying = false;" on line 38 of the file UIManger.cs & line 59 of Pause.cs.
+
+This line is made to operate in the unity editor and the game can't compile with these in the files.
 
 ## Game controls
 

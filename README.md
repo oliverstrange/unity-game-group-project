@@ -23,7 +23,7 @@ The team consisted of six members:
 
 This game was developed using version 2021.3.18f1 of the Unity editor.
 
-## Running the game
+## Downloading the game
 
 **Note:** This game requires Unity Hub
 
@@ -41,6 +41,15 @@ git clone https://github.com/oliverstrange/comp4024.git
 
 If you have downloaded whole project, to open it, you need to add it to your Unity Hub.
 To do so, you just need to open Unity Hub, then click the white `ADD` button in upper right corner. Then in the dialog window, you need to go to the location, where you have downloaded the project, select it and click `ok` in the bottom right corner of dialog window. Then find the project on the projects list in Unit Hub, and double click the projects name (*for each project there is information about unity version which were used by making this project*). 
+
+## Game scenes
+
+- Start_Game_Menu
+- Tutorial_Level
+- Level_One
+- Level_Two
+- Win_Screen_One
+- Win_Screen_Two
 
 ## Game controls
 

@@ -1,6 +1,6 @@
 # Fetch
 
-![](TitleScreenImage.png)
+![](Resources/GameImage.png)
 
 An playful 2D platformer made using Unity game engine and written using C#.
 
@@ -23,7 +23,7 @@ The team consisted of six members:
 
 This game was developed using version 2021.3.18f1 of the Unity editor.
 
-## Running the game
+## Downloading the game
 
 **Note:** This game requires Unity Hub
 
@@ -42,6 +42,22 @@ git clone https://github.com/oliverstrange/comp4024.git
 If you have downloaded whole project, to open it, you need to add it to your Unity Hub.
 To do so, you just need to open Unity Hub, then click the white `ADD` button in upper right corner. Then in the dialog window, you need to go to the location, where you have downloaded the project, select it and click `ok` in the bottom right corner of dialog window. Then find the project on the projects list in Unit Hub, and double click the projects name (*for each project there is information about unity version which were used by making this project*). 
 
+
+## Game scenes
+
+- Start_Game_Menu
+- Tutorial_Level
+- Level_One
+- Level_Two
+- Win_Screen_One
+- Win_Screen_Two
+
+## Building the game
+
+The game is all ready to be built with the scenes in the correct order. However, you will need to elete or comment out " UnityEditor.EditorApplication.isPlaying = false;" on line 38 of the file UIManger.cs & line 59 of Pause.cs.
+
+This line is made to operate in the unity editor and the game can't compile with these in the files.
+
 ## Game controls
 
 Use the `left arrow` key and `right arrow` key to move the dog around the map and the `up arrow` key to jump. 
@@ -59,6 +75,16 @@ Use the `P` key to pause the game at anytime.
 - [x] Audio (Music, sound effects, etc.)
 - [x] Pick ups (Speed boost, extra health, etc.) 
 - [x] Tests
+
+## Testing
+
+For our project we decided to carry out both Test Driven Development and Beta Testing. 
+
+TDD allows the development phase to be more efficient and also helped us to find issues in our code at an early stage, this is beneficial becausse if we did not do this, multiple bugs could build up and they would be harder to find.
+
+Beta Testing allows us developers to prioritise customer/user opinnion, we can gain vital feeback to help improve our game , further more we can identify new bugs us developers may not as when we play the game, we may think differently to the users.
+
+Here you can find links to both the [Unit Test Plan](Resources/Unit%20Test%20plan-2.pdf) and [Beta Testing Report](Resources/Beta%20Testing%20COMP%204024.pdf).
 
 
 ## Credits / Thanks:

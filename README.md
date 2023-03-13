@@ -1,6 +1,6 @@
 # Fetch
 
-![](GameImage.png)
+![](Resources/TitleScreenImage.png)
 
 An playful 2D platformer made using Unity game engine and written using C#.
 
@@ -68,6 +68,16 @@ Use the `P` key to pause the game at anytime.
 - [x] Audio (Music, sound effects, etc.)
 - [x] Pick ups (Speed boost, extra health, etc.) 
 - [x] Tests
+
+## Testing
+
+For our project we decided to carry out both Test Driven Development and Beta Testing. 
+
+TDD allows the development phase to be more efficient and also helped us to find issues in our code at an early stage, this is beneficial becausse if we did not do this, multiple bugs could build up and they would be harder to find.
+
+Beta Testing allows us developers to prioritise customer/user opinnion, we can gain vital feeback to help improve our game , further more we can identify new bugs us developers may not as when we play the game, we may think differently to the users.
+
+Here you can find links to both the [Unit Test Plan](Resources/Unit%20Test%20plan-2.pdf) and [Beta Testing Report](Resources/Beta%20Testing%20COMP%204024.pdf).
 
 
 ## Credits / Thanks:
